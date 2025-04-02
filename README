@@ -1,0 +1,8 @@
+Este proyecto desarrollara un pre del proyecto presentado en el hackathon 2025
+    en este caso en el trak de Capital One.
+
+El proyecto a desarrollar es una plataforma de educación, predicción y apoyo para
+    las finanzas del usuario.
+
+En esta parte solo comenzare practicando la aplicacion del back-end y la base de datos
+    de la plataforma, el back-end sera con FLASK y la base de datos con FIREBASE.
