@@ -5,4 +5,4 @@ El proyecto a desarrollar es una plataforma de educación, predicción y apoyo p
     las finanzas del usuario.
 
 En esta parte solo comenzare practicando la aplicacion del back-end y la base de datos
-    de la plataforma, el back-end sera con FLASK y la base de datos con FIREBASE.
+    de la plataforma, el back-end sera con ReactJS y la base de datos con Azure.
