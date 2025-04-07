@@ -1,0 +1,60 @@
+#Para crear el proyecto actual ire escribiendo paso a paso como se hizo para poder repetirlo
+
+##Crear carpetas frontend y backend
+
+###cd frontend
+    npm create vite@4.1.0
+    y
+    {darle nombre al proyecto}
+    React
+    TypeScript
+    cd {nombre del proyecto}
+    npm install
+    npm run build
+    npm run dev
+
+    Para crear componentes de agrega un archivo en src, nombralo y termina con .tsx
+        Primero crea una carpeta "components" en src
+        Puedes borrar el contenido de App.tsx
+        Usa un funcion, siempre inicia el nombre en mayuscula
+        retorna en "JSK" algo como html
+        exportalo como default y el nomnbre.
+        Se usara en App.tsx
+
+    Para darle formato: npm i bootstrap@5.2.3
+        Puedes borrar el contenido de App.css y eliminar el documento index.css
+        Luego ve a main.tsx y cambia
+            Esta linea: import './index.css'
+            Por esta otra: import 'bootstrap/dist/css/bootstrap.css'
+
+    En los componentes:
+        **OJO: Para los componentes podemos basarnos en la documentacion de "getbootstrap.com"
+        Recuerda que "class" es una palabra reservada, tendras que usar "className"
+        No es buena idea usar puros divs, asi que en cada componente agrega <> </> al inicio y final 
+            del return para evitar tener tantos elementos pero que todo se muestre bien.
+        Utiliza interface Props para meter propiedades a las funciones X(props: Props) o funciones X({cosa, cosa2} : Props)
+
+    React-Router (libreria para multi-paginas)
+        npm install react-router-dom@6
+        En App.tsx: import { BrowserRouter, Route, Routes } from "react-router-dom";
+            Meter todo el return entre <BrowserRouter><Routes><Route></Route></Routes></BrowserRouter>
+            dentro del route ponemos un path y en element todo lo que estara en la pagina con ese path 
+            <Route path='/[ruta de la pag]' element={<div>Home page</div>}> </Route>
+
+        Crea una carpeta pages
+            importamos las paginas como si fueran componentes 
+                import Home from './pages/Home';
+                import About from './pages/About';
+                import Contact from './pages/Contact';
+
+                function App() {
+                    <BrowserRouter>
+                        <Routes>
+                        <Route path='/' element={<Home />} />
+                        <Route path='/about' element={<About />} />
+                        <Route path='/contact' element={<Contact />} />
+                        </Routes>
+                    </BrowserRouter>
+                }
+
+                export default App;
