@@ -10,6 +10,8 @@
     TypeScript
     cd {nombre del proyecto}
     npm install
+    npm i bootstrap@5.2.3
+    npm install react-router-dom@6
     npm run build
     npm run dev
 
@@ -18,14 +20,16 @@
         Puedes borrar el contenido de App.tsx
         Usa un funcion, siempre inicia el nombre en mayuscula
         retorna en "JSK" algo como html
-        exportalo como default y el nomnbre.
+        exportalo como default y el nombre.
         Se usara en App.tsx
 
     Para darle formato: npm i bootstrap@5.2.3
         Puedes borrar el contenido de App.css y eliminar el documento index.css
         Luego ve a main.tsx y cambia
             Esta linea: import './index.css'
-            Por esta otra: import 'bootstrap/dist/css/bootstrap.css'
+            Por esta otra: 
+                import 'bootstrap/dist/css/bootstrap.css';
+                import "bootstrap/dist/js/bootstrap.bundle.min.js"; //Para desplegar
 
     En los componentes:
         **OJO: Para los componentes podemos basarnos en la documentacion de "getbootstrap.com"
@@ -43,18 +47,27 @@
 
         Crea una carpeta pages
             importamos las paginas como si fueran componentes 
-                import Home from './pages/Home';
-                import About from './pages/About';
-                import Contact from './pages/Contact';
+                import { BrowserRouter, Route, Routes } from "react-router-dom";
+                import Home from "./pages/Home";
+                import About from "./pages/About";
+                import Login from "./pages/Login";
+                import Signup from "./pages/Signup";
 
                 function App() {
+                return (
                     <BrowserRouter>
-                        <Routes>
-                        <Route path='/' element={<Home />} />
-                        <Route path='/about' element={<About />} />
-                        <Route path='/contact' element={<Contact />} />
-                        </Routes>
+                    <Routes>
+                        <Route index element={<Home />} />
+                        <Route path="/about" element={<About />} />
+                        <Route path="/login" element={<Login />} />
+                        <Route path="/signup" element={<Signup />} />
+                    </Routes>
                     </BrowserRouter>
+                );
                 }
 
                 export default App;
+
+
+        Para cada page importar: import {Link} from 'react-router-dom';
+            para poder poner enlaces a las otras paginas, si no un NavLink para la barra de navegación
