@@ -1,1 +1,25 @@
 # Esta parte de los pasos se centrara en la implementacion de firebase en la pagina web.
+    cd "frontend/hack25"
+    npm init -y
+    npm i firebase #Con esto accedemos a la libreria de firebase
+
+        ## Agregar lo necesario para conectar firebase a la app, esto se obtiene en firebase
+
+            import { initializeApp } from "firebase/app";
+            import { getAnalytics } from "firebase/analytics";
+
+            const firebaseConfig = {
+            apiKey: "AIzaSyCDZxWisLUMlpX8McAbDLofkj0h3vP9Rv8",
+            authDomain: "sophonsdb.firebaseapp.com",
+            projectId: "sophonsdb",
+            storageBucket: "sophonsdb.firebasestorage.app",
+            messagingSenderId: "1061030064834",
+            appId: "1:1061030064834:web:9bc0043b76a78ff05c815b",
+            measurementId: "G-9843BRKMJF",
+            };
+
+            // Initialize Firebase
+            const firebase_app = initializeApp(firebaseConfig);
+            const analytics = getAnalytics(firebase_app);
+
+            export default firebase_app;

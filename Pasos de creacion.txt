@@ -3,6 +3,7 @@
 ##Crear carpetas frontend y backend
 
 ###cd frontend
+    npm install react@latest react-dom@latest
     npm create vite@4.1.0
     y
     {darle nombre al proyecto}
@@ -11,7 +12,7 @@
     cd {nombre del proyecto}
     npm install
     npm i bootstrap@5.2.3
-    npm install react-router-dom@6
+    npm install react-router-dom@latest
     npm run build
     npm run dev
 
@@ -39,7 +40,7 @@
         Utiliza interface Props para meter propiedades a las funciones X(props: Props) o funciones X({cosa, cosa2} : Props)
 
     React-Router (libreria para multi-paginas)
-        npm install react-router-dom@6
+        npm install react-router-dom@latest
         En App.tsx: import { BrowserRouter, Route, Routes } from "react-router-dom";
             Meter todo el return entre <BrowserRouter><Routes><Route></Route></Routes></BrowserRouter>
             dentro del route ponemos un path y en element todo lo que estara en la pagina con ese path 
@@ -68,6 +69,52 @@
 
                 export default App;
 
+        ******* PARA EVITAR ADVERTENCIAS *******
+        Quitaremos las advertencias redefiniendo App.tsx, cambiemos la distribucion anterior por una nueva que sera
+            compatible con react 7 (ademas sera más estable en el futuro)
+
+            import { createBrowserRouter, RouterProvider } from "react-router-dom";
+            import { useState } from "react";
+
+            import Home from "./pages/Home";
+            import About from "./pages/About";
+            import Login from "./pages/Login";
+            import Signup from "./pages/Signup";
+
+            function App() {
+            const [user, setUser] = useState<{ name: string; email: string } | null>(null);
+
+            const router = createBrowserRouter(
+                [
+                {
+                    path: "/",
+                    element: <Home user={user} />,
+                },
+                {
+                    path: "/about",
+                    element: <About />,
+                },
+                {
+                    path: "/login",
+                    element: <Login setUser={setUser} />,
+                },
+                {
+                    path: "/signup",
+                    element: <Signup />,
+                },
+                ],
+                {
+                future: {
+                    v7_startTransition: true,
+                    v7_relativeSplatPath: true,
+                },
+                }
+            );
+
+            return <RouterProvider router={router} />;
+            }
+
+            export default App;
 
         Para cada page importar: import {Link} from 'react-router-dom';
             para poder poner enlaces a las otras paginas, si no un NavLink para la barra de navegación
