@@ -11,7 +11,7 @@ function NavBar() {
     <>
       <nav className="navbar navbar-expand-lg bg-body-tertiary">
         <div className="container-fluid">
-          <a className="navbar-brand">Sophons</a>
+          <a className="navbar-brand">NovAureum</a>
           {/* Barra de navegacion que se ve en pantalla grande */}
           <div className="collapse navbar-collapse" id="navbarScroll">
             <ul className="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll">
@@ -33,7 +33,7 @@ function NavBar() {
                   }
                   to="/about"
                 >
-                  About {/* Pagina de acerca de */}
+                  About us {/* Pagina de acerca de */}
                 </NavLink>
               </li>
               <li className="nav-item dropdown">
@@ -91,18 +91,18 @@ function NavBar() {
                 <button
                   className="btn btn-outline-secondary"
                   type="button"
-                  onClick={() => handleOnClick("login")}
+                  onClick={() => handleOnClick("signup")}
                 >
-                  Login {/* Pagina de inicio de sesion */}
+                  Create Account {/* Pagina de crear cuenta */}
                 </button>
               </li>
               <li className="nav-item">
                 <button
                   className="btn btn-outline-secondary"
                   type="button"
-                  onClick={() => handleOnClick("signup")}
+                  onClick={() => handleOnClick("login")}
                 >
-                  Sign up {/* Pagina de crear cuenta */}
+                  Log-in {/* Pagina de inicio de sesion */}
                 </button>
               </li>
             </ul>

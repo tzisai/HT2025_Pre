@@ -23,3 +23,24 @@
             const analytics = getAnalytics(firebase_app);
 
             export default firebase_app;
+
+        ## Agregamos la parte de validaciones para obtener la base de datos.
+
+            # Login, al ya tener los metodos de autentificación, los extraemos de "auth"
+                
+                import { loginUser } from "../firebase/auth";
+
+                const handleSubmit = async (e: React.FormEvent) => {
+                    e.preventDefault();
+                    if (!email || !inputPassword) return;
+
+                    try {
+                        const user = await loginUser(email, inputPassword);
+                        setUser({ name: user.email || "", email: user.email || "" });
+                        navigate("/");
+                    } catch (error: any) {
+                        console.error("Error al iniciar sesión:", error.message);
+                        alert("Correo o contraseña incorrectos.");
+                    }
+                };
+

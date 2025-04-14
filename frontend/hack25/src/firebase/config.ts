@@ -1,4 +1,5 @@
 // Configuración de Firebase
+// NO TOCAR O NO FUNCIONARA NADAAAAA
 
 const firebaseConfig = {
     apiKey: "AIzaSyCDZxWisLUMlpX8McAbDLofkj0h3vP9Rv8",

@@ -1,11 +1,11 @@
 import { Link } from "react-router-dom";
 import NavBar from "../components/NavBar";
+import { useAuth } from "../context/AuthContext";
 
-interface HomeProps {
-  user: { name: string; email: string } | null;
-}
+function Home() {
+  const { user, loading } = useAuth();
+  if (loading) return <p>Cargando...</p>;
 
-function Home({ user }: HomeProps) {
   return (
     <>
       <NavBar />
