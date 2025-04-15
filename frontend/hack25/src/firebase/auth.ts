@@ -31,13 +31,16 @@ export const registerUser = async (email: string, password: string, nombre: stri
     console.log("Usuario "+Nombre+" registrado con éxito");
 
   } catch (error:any) {
+    console.log(error)
     if (error.code === "auth/email-already-in-use") {
       console.error("El correo ya está en uso.");
     } else if (error.code === "permission-denied") {
       console.error("No tienes permiso para escribir en Firestore.");
     } else {
       console.error("Error al registrar el usuario:", error.message);
-    }  }
+    } 
+    throw error; 
+  }
 };
 
 // Iniciar sesión

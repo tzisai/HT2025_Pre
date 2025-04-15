@@ -6,16 +6,18 @@ import { useNavigate } from "react-router-dom";
 function Signup() {
   const navigate = useNavigate();
 
-  const [tipo_cuenta, setTipoCuenta] = useState(""); // Estado para el tipo de cuenta
-  const [inputPassword, setInputPassword] = useState(""); // Estado para la contraseña
-  const [verifyPassword, setVerifyPassword] = useState(""); // Estado para la verificación de la contraseña
-  const [apellidos, setApellidos] = useState(""); // Estado para el apellidos
-  const [email, setEmail] = useState(""); // Estado para el email
-  const [nombre, setNombre] = useState(""); // Estado para el nombre
-  const [telefono, setTelefono] = useState(""); // Estado para el telefono
-  const [termsAccepted, setTermsAccepted] = useState(false); // Estado para los términos y condiciones
+  // Estados para los valores del formulario
+  const [tipo_cuenta, setTipoCuenta] = useState("");
+  const [inputPassword, setInputPassword] = useState("");
+  const [verifyPassword, setVerifyPassword] = useState("");
+  const [apellidos, setApellidos] = useState("");
+  const [email, setEmail] = useState("");
+  const [nombre, setNombre] = useState("");
+  const [telefono, setTelefono] = useState("");
+  const [termsAccepted, setTermsAccepted] = useState(false);
+
+  // Estado para campos tocados
   const [touched, setTouched] = useState({
-    // Estado para los inputs
     tipo_cuenta: false,
     password: false,
     verifyPassword: false,
@@ -26,66 +28,69 @@ function Signup() {
     termsAccepted: false,
   });
 
-  const handleTipoCuentaChange = (value: string) => {
-    setTipoCuenta(value);
-  };
+  // Errores personalizados del backend (como email ya registrado)
+  const [customErrors, setCustomErrors] = useState({
+    emailInUse: false,
+    passwordInvalid: false,
+  });
 
-  // Se obtiene el valor del input de la contraseña y de la verificación de la contraseña
+  // Expresiones regulares para validaciones
+  const emailRegex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
+  const phoneRegex = /^\d{10,}$/;
+  const passwordRegex =
+    /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[^A-Za-z\d])[A-Za-z\d\W]{6,4000}$/;
+
+  // Manejador para cambios en las contraseñas
   const handlePasswordChange = (id: string, value: string) => {
-    if (id === "InputPassword") {
-      setInputPassword(value);
-    } else if (id === "VerifyPassword") {
-      setVerifyPassword(value);
-    }
+    setCustomErrors((prev) => ({ ...prev, passwordInvalid: false }));
+    id === "InputPassword" ? setInputPassword(value) : setVerifyPassword(value);
   };
 
-  // Se obtiene el valor del input del nombre y del email
+  // Manejador para cambios en los inputs de texto
   const handleInputChange = (id: string, value: string) => {
-    if (id === "nombre") {
-      setNombre(value);
-    } else if (id === "email") {
-      setEmail(value);
-    } else if (id === "apellidos") {
-      setApellidos(value);
-    } else if (id === "telefono") {
-      setTelefono(value);
-    }
+    setCustomErrors((prev) => ({ ...prev, emailInUse: false }));
+    const setters: any = {
+      nombre: setNombre,
+      email: setEmail,
+      apellidos: setApellidos,
+      telefono: setTelefono,
+    };
+    if (setters[id]) setters[id](value);
   };
 
-  // Se obtiene el valor del checkbox de términos y condiciones
-  const handleTermsChange = () => {
-    setTermsAccepted(!termsAccepted);
-  };
-
-  // Se obtiene el valor del input para ver si fue correctamente ingresado o no
+  // Marca un campo como "tocado" cuando pierde el foco
   const handleBlur = (field: string) => {
     setTouched((prev) => ({ ...prev, [field]: true }));
   };
 
-  // Expresión regular para validar el correo electrónico
-  const emailRegex = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
+  // Valida si la contraseña cumple con los requisitos
+  const validatePassword = (password: string) => passwordRegex.test(password);
 
-  // Función para validar la contraseña
-  const validatePassword = (password: string) => {
-    const passwordRegex =
-      /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[!@#$%^&*])[A-Za-z\d!@#$%^&*]{6,4000}$/;
-    return passwordRegex.test(password);
-  };
+  // Devuelve true si la contraseña es inválida
+  const isPasswordInvalid = () =>
+    (touched.password && !validatePassword(inputPassword)) ||
+    customErrors.passwordInvalid;
 
-  // Validación del formulario
+  // Devuelve true si la verificación de contraseña es inválida
+  const isVerifyPasswordInvalid = () =>
+    touched.verifyPassword && verifyPassword !== inputPassword;
+
+  // Validación general del formulario
   const isFormValid =
-    tipo_cuenta !== "" &&
+    tipo_cuenta &&
+    validatePassword(inputPassword) &&
     inputPassword === verifyPassword &&
-    inputPassword !== "" &&
-    verifyPassword !== "" &&
     emailRegex.test(email) &&
-    nombre !== "" &&
-    apellidos !== "" &&
-    telefono !== "" &&
+    nombre &&
+    apellidos &&
+    phoneRegex.test(telefono) &&
     termsAccepted;
 
+  // Manejador del submit del formulario
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+    setCustomErrors({ emailInUse: false, passwordInvalid: false });
+
     if (!isFormValid) {
       setTouched({
         tipo_cuenta: true,
@@ -100,14 +105,6 @@ function Signup() {
       return;
     }
 
-    // Validar la contraseña
-    if (!validatePassword(inputPassword)) {
-      console.error(
-        "La contraseña debe tener al menos 6 caracteres, una mayúscula, una minúscula, un número y un carácter especial."
-      );
-      return;
-    }
-
     try {
       await registerUser(
         email,
@@ -119,9 +116,11 @@ function Signup() {
       );
       navigate("/");
     } catch (error: any) {
-      if (error.code === "auth/email-already-in-use") {
-        console.error("Correo ya en uso");
-        console.error("Este correo ya está registrado.");
+      const errorCode = error?.code || error?.response?.data?.error?.message;
+
+      if (errorCode === "auth/email-already-in-use") {
+        setCustomErrors((prev) => ({ ...prev, emailInUse: true }));
+        setTouched((prev) => ({ ...prev, email: true }));
       } else {
         console.error("Error al registrar el usuario:", error);
       }
@@ -134,6 +133,7 @@ function Signup() {
       <div>
         <h1>Crear cuenta</h1>
         <form onSubmit={handleSubmit}>
+          {/* Tipo de cuenta */}
           <div className="mb-3">
             <label htmlFor="tipo_cuenta" className="form-label">
               Tipo de cuenta
@@ -141,10 +141,10 @@ function Signup() {
             <select
               id="tipo_cuenta"
               className={`form-select ${
-                touched.tipo_cuenta && tipo_cuenta === "" ? "is-invalid" : ""
+                touched.tipo_cuenta && !tipo_cuenta ? "is-invalid" : ""
               }`}
               value={tipo_cuenta}
-              onChange={(e) => handleTipoCuentaChange(e.target.value)}
+              onChange={(e) => setTipoCuenta(e.target.value)}
               onBlur={() => handleBlur("tipo_cuenta")}
             >
               <option value="">--Selecciona el tipo de cuenta--</option>
@@ -153,13 +153,14 @@ function Signup() {
               <option value="Familiar">Familiar</option>
               <option value="Empresarial">Empresarial</option>
             </select>
-            {touched.tipo_cuenta && tipo_cuenta === "" && (
+            {touched.tipo_cuenta && !tipo_cuenta && (
               <div className="invalid-feedback">
                 El tipo de cuenta es obligatorio.
               </div>
             )}
           </div>
 
+          {/* Nombre */}
           <div className="mb-3">
             <label htmlFor="nombre" className="form-label">
               Nombre de usuario
@@ -167,18 +168,19 @@ function Signup() {
             <input
               type="text"
               className={`form-control ${
-                // Verifica si el input fue correctamente ingresado o no
-                touched.nombre && nombre === "" ? "is-invalid" : ""
+                touched.nombre && !nombre ? "is-invalid" : ""
               }`}
               id="nombre"
               value={nombre}
               onChange={(e) => handleInputChange("nombre", e.target.value)}
-              onBlur={() => handleBlur("nombre")} // Verifica si el input fue correctamente ingresado o no
+              onBlur={() => handleBlur("nombre")}
             />
-            {touched.nombre && nombre === "" && (
+            {touched.nombre && !nombre && (
               <div className="invalid-feedback">El nombre es obligatorio.</div>
             )}
           </div>
+
+          {/* Apellidos */}
           <div className="mb-3">
             <label htmlFor="apellidos" className="form-label">
               Apellidos
@@ -186,41 +188,45 @@ function Signup() {
             <input
               type="text"
               className={`form-control ${
-                // Verifica si el input fue correctamente ingresado o no
-                touched.apellidos && apellidos === "" ? "is-invalid" : ""
+                touched.apellidos && !apellidos ? "is-invalid" : ""
               }`}
               id="apellidos"
               value={apellidos}
               onChange={(e) => handleInputChange("apellidos", e.target.value)}
-              onBlur={() => handleBlur("apellidos")} // Verifica si el input fue correctamente ingresado o no
+              onBlur={() => handleBlur("apellidos")}
             />
-            {touched.apellidos && apellidos === "" && (
+            {touched.apellidos && !apellidos && (
               <div className="invalid-feedback">
                 Los apellidos son obligatorios.
               </div>
             )}
           </div>
+
+          {/* Teléfono */}
           <div className="mb-3">
             <label htmlFor="telefono" className="form-label">
-              Numero de telefono
+              Número de teléfono
             </label>
             <input
               type="text"
               className={`form-control ${
-                // Verifica si el input fue correctamente ingresado o no
-                touched.telefono && telefono === "" ? "is-invalid" : ""
+                touched.telefono && !phoneRegex.test(telefono)
+                  ? "is-invalid"
+                  : ""
               }`}
               id="telefono"
               value={telefono}
               onChange={(e) => handleInputChange("telefono", e.target.value)}
-              onBlur={() => handleBlur("telefono")} // Verifica si el input fue correctamente ingresado o no
+              onBlur={() => handleBlur("telefono")}
             />
-            {touched.telefono && telefono === "" && (
+            {touched.telefono && !phoneRegex.test(telefono) && (
               <div className="invalid-feedback">
-                El numero de telefono es obligatorio.
+                Ingresa un número de teléfono válido de al menos 10 dígitos.
               </div>
             )}
           </div>
+
+          {/* Email */}
           <div className="mb-3">
             <label htmlFor="email" className="form-label">
               Email
@@ -228,25 +234,34 @@ function Signup() {
             <input
               type="email"
               className={`form-control ${
-                // Verifica si el input fue correctamente ingresado o no
-                touched.email && !emailRegex.test(email) ? "is-invalid" : ""
+                (touched.email && (!email || !emailRegex.test(email))) ||
+                customErrors.emailInUse
+                  ? "is-invalid"
+                  : ""
               }`}
               id="email"
               value={email}
               onChange={(e) => handleInputChange("email", e.target.value)}
-              aria-describedby="emailHelp"
               onBlur={() => handleBlur("email")}
             />
-            {touched.email &&
-              !emailRegex.test(email) && ( // Verifica si el input fue correctamente ingresado o no
-                <div className="invalid-feedback">
-                  Por favor, ingresa un correo válido.
-                </div>
-              )}
+            {touched.email && (!email || !emailRegex.test(email)) && (
+              <div className="invalid-feedback">
+                {email === ""
+                  ? "El correo es obligatorio."
+                  : "Por favor, ingresa un correo válido."}
+              </div>
+            )}
+            {customErrors.emailInUse && (
+              <div className="invalid-feedback">
+                Este correo ya está registrado.
+              </div>
+            )}
             <div id="emailHelp" className="form-text">
-              No compartiremos tu correo electronico con nadie más.
+              No compartiremos tu correo electrónico con nadie más.
             </div>
           </div>
+
+          {/* Contraseña */}
           <div className="mb-3">
             <label htmlFor="InputPassword" className="form-label">
               Contraseña
@@ -254,8 +269,7 @@ function Signup() {
             <input
               type="password"
               className={`form-control ${
-                // Verifica si el input fue correctamente ingresado o no
-                touched.password && inputPassword === "" ? "is-invalid" : ""
+                isPasswordInvalid() ? "is-invalid" : ""
               }`}
               id="InputPassword"
               value={inputPassword}
@@ -264,20 +278,24 @@ function Signup() {
               }
               onBlur={() => handleBlur("password")}
             />
-            {touched.password &&
-              inputPassword === "" && ( // Verifica si el input fue correctamente ingresado o no
-                <div className="invalid-feedback">
-                  La contraseña es obligatoria.
-                </div>
-              )}
+            {isPasswordInvalid() && (
+              <div className="invalid-feedback">
+                La contraseña debe tener al menos 6 caracteres, una mayúscula,
+                una minúscula, un número y un carácter especial.
+              </div>
+            )}
+          </div>
+
+          {/* Verificar contraseña */}
+          <div className="mb-3">
             <label htmlFor="VerifyPassword" className="form-label">
-              Verifica tu contraseña*
+              Verifica tu contraseña
             </label>
             <input
               type="password"
               className={`form-control ${
-                // Verifica si el input fue correctamente ingresado o no
-                touched.verifyPassword && verifyPassword === ""
+                touched.verifyPassword &&
+                (!verifyPassword || verifyPassword !== inputPassword)
                   ? "is-invalid"
                   : ""
               }`}
@@ -288,45 +306,47 @@ function Signup() {
               }
               onBlur={() => handleBlur("verifyPassword")}
             />
+            {touched.verifyPassword && !verifyPassword && (
+              <div className="invalid-feedback">
+                Debes verificar tu contraseña.
+              </div>
+            )}
             {touched.verifyPassword &&
-              verifyPassword === "" && ( // Verifica si el input fue correctamente ingresado o no
+              verifyPassword &&
+              verifyPassword !== inputPassword && (
                 <div className="invalid-feedback">
-                  Debes verificar tu contraseña.
+                  Las contraseñas no coinciden.
                 </div>
               )}
           </div>
+
+          {/* Términos y condiciones */}
           <div className="mb-3 form-check">
             <input
               type="checkbox"
               className={`form-check-input ${
-                // Verifica si el input fue correctamente ingresado o no
                 touched.termsAccepted && !termsAccepted ? "is-invalid" : ""
               }`}
               id="TerminosCondiciones"
               checked={termsAccepted}
-              onChange={handleTermsChange}
+              onChange={() => setTermsAccepted(!termsAccepted)}
               onBlur={() => handleBlur("termsAccepted")}
             />
             <label className="form-check-label" htmlFor="TerminosCondiciones">
               Acepto los términos y condiciones de Sohpons
             </label>
-            {touched.termsAccepted &&
-              !termsAccepted && ( // Verifica si el input fue correctamente ingresado o no
-                <div className="invalid-feedback">
-                  Debes aceptar los términos y condiciones.
-                </div>
-              )}
+            {touched.termsAccepted && !termsAccepted && (
+              <div className="invalid-feedback">
+                Debes aceptar los términos y condiciones.
+              </div>
+            )}
           </div>
-          <button
-            type="submit"
-            className="btn btn-primary"
-            disabled={!isFormValid}
-          >
+
+          <button type="submit" className="btn btn-primary">
             Crear cuenta
           </button>
         </form>
-        <p>
-          <br />
+        <p className="mt-3">
           ¿Ya tienes una cuenta?{" "}
           <a href="/login" className="link-primary">
             Inicia sesión
