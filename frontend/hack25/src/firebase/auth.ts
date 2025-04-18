@@ -1,6 +1,6 @@
 // Funciones de autenticación
 
-import { createUserWithEmailAndPassword, signInWithEmailAndPassword } from "firebase/auth";
+import { createUserWithEmailAndPassword, signInWithEmailAndPassword, signOut } from "firebase/auth";
 import { doc, serverTimestamp, setDoc } from "firebase/firestore";
 import { auth, db } from "./firebaseApp";
 
@@ -45,19 +45,33 @@ export const registerUser = async (email: string, password: string, nombre: stri
 
 // Iniciar sesión
 export const loginUser = async (email: string, password: string) => {
+  console.log("Intentando iniciar sesión con:", email, password);
+
   try {
-    const userCredential = await signInWithEmailAndPassword(auth, email, password);
+    const userCredential = await signInWithEmailAndPassword(auth, email.trim(), password.trim());
     return userCredential.user;
   } catch (error: any) {
-    switch (error.code) {
-      case "auth/user-not-found":
-        throw new Error("Usuario no encontrado");
-      case "auth/wrong-password":
-        throw new Error("Contraseña incorrecta");
-      case "auth/invalid-email":
-        throw new Error("Correo electrónico no válido");
-      default:
-        throw new Error("Error al iniciar sesión");
+    console.error("Error de Firebase login:", error.code, error.message);
+    if (error.code === "auth/user-not-found") {
+      throw { code: "auth/user-not-found", message: "Usuario no encontrado." };
+    } else if (error.code === "auth/wrong-password") {
+      throw { code: "auth/wrong-password", message: "Contraseña incorrecta." };
+    } else {
+      throw {
+        code: error.code || "auth/unknown-error",
+        message: error.message || "Error al iniciar sesión.",
+      };
     }
+  }
+};
+
+// Cerrar sesión
+export const logoutUser = async () => {
+  try {
+    await signOut(auth);
+    console.log("Sesión cerrada exitosamente.");
+  } catch (error: any) {
+    console.error("Error al cerrar sesión:", error.message);
+    throw error;
   }
 };

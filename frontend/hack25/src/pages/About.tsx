@@ -31,12 +31,14 @@ function About() {
       <div className="container">
         <h1>Sobre Nosotros</h1>
         {info ? (
-          Object.entries(info).map(([title, content]) => (
-            <div key={title} className="mb-6">
-              <h2 className="text-xl font-semibold mb-2">{title}</h2>
-              <div dangerouslySetInnerHTML={{ __html: content }} />
-            </div>
-          ))
+          Object.entries(info)
+            .sort(([a], [b]) => a.localeCompare(b)) // ordena alfabéticamente por título
+            .map(([title, content]) => (
+              <div key={title} className="mb-6">
+                <h2 className="text-xl font-semibold mb-2">{title}</h2>
+                <div dangerouslySetInnerHTML={{ __html: content }} />
+              </div>
+            ))
         ) : (
           <p>Cargando información...</p>
         )}
