@@ -4,10 +4,12 @@ import { FaUserCircle } from "react-icons/fa"; // Icono de usuario
 import { logoutUser } from "../firebase/auth";
 import { onAuthStateChanged } from "firebase/auth";
 import { auth } from "../firebase/firebaseApp"; // Ajusta la ruta si es necesario
+import "./NavBar.css"; 
+import logo from "../assets/sophos_web.svg"; // Ajustá la ruta según tu estructura
 
 function NavBar() {
   let navigate = useNavigate();
-  const [isLoggedIn, setIsLoggedIn] = useState(false); // Aquí gestionamos el estado de inicio de sesión
+  const [isLoggedIn, setIsLoggedIn] = useState(false); // Estado de inicio de sesión
 
   useEffect(() => {
     const unsubscribe = onAuthStateChanged(auth, (user) => {
@@ -16,7 +18,6 @@ function NavBar() {
     return () => unsubscribe(); // Limpia el listener cuando se desmonta
   }, []);
 
-  let text = "";
   const handleOnClick = (text: string) => {
     navigate("/" + text);
   };
@@ -33,12 +34,21 @@ function NavBar() {
 
   return (
     <>
-      <nav className="navbar navbar-expand-lg bg-body-tertiary">
+      <nav className="navbar navbar-expand-lg navbar-aspect">
         <div className="container-fluid">
-          <a className="navbar-brand">NovAureum</a>
-          {/* Boton para colapsar la barra de navegacion para pantallas pequeñas*/}
+        <a className="navbar-brand d-flex align-items-center" href="/">
+          <img
+            src={logo}
+            alt="Logo"
+            className="logo-img"
+          />
+          <span className="ms-2">NovAureum</span>
+        </a>
+
+
+          {/* Botón de hamburguesa para colapsar en pantallas pequeñas */}
           <button
-            className="navbar-toggler"
+            className="navbar-toggler custom-toggler"
             type="button"
             data-bs-toggle="collapse"
             data-bs-target="#navbarScroll"
@@ -46,64 +56,64 @@ function NavBar() {
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
-            <span className="navbar-toggler-icon"></span>
+            <span className="toggler-bar"></span>
+            <span className="toggler-bar"></span>
+            <span className="toggler-bar"></span>
           </button>
-          {/* Barra de navegacion que se ve en pantalla grande */}
+
+          {/* Menú colapsable */}
           <div className="collapse navbar-collapse" id="navbarScroll">
-            <ul className="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll">
+            {/* Links de navegación */}
+            <ul className="navbar-nav my-2 my-lg-0 navbar-nav-scroll">
               <li className="nav-item">
                 <NavLink
                   className={({ isActive }) =>
-                    isActive ? "nav-link active text-primary" : "nav-link"
+                    isActive ? "nav-link active text-act" : "nav-link"
                   }
                   aria-current="page"
                   to="/"
                 >
-                  Home {/* Pagina de inicio */}
+                  <div className="text-bt-nav">Home</div>
                 </NavLink>
               </li>
-              <li className="nav-item">
+              <li className="nav-item text-bt-nav">
                 <NavLink
                   className={({ isActive }) =>
-                    isActive ? "nav-link active text-primary" : "nav-link"
+                    isActive ? "nav-link active text-act" : "nav-link"
                   }
                   to="/about"
                 >
-                  About us {/* Pagina de acerca de */}
+                  About us
                 </NavLink>
               </li>
-              <li className="nav-item dropdown">
+              <li className="nav-item dropdown text-bt-nav">
                 <a
-                  className="nav-link dropdown-toggle"
+                  className="nav-link"
                   type="button"
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
                 >
-                  Services {/* Pagina de servicios, desplegado para verlos */}
+                  Services
                 </a>
                 <ul className="dropdown-menu">
                   <li>
                     <NavLink
                       className={({ isActive }) =>
-                        isActive
-                          ? "dropdown-item text-primary"
-                          : "dropdown-item"
+                        isActive ? "dropdown-item" : "dropdown-item"
                       }
                       to="/servicio1"
                     >
-                      Service 1
+                      Nova-IA
                     </NavLink>
                   </li>
                   <li>
                     <NavLink
                       className={({ isActive }) =>
-                        isActive
-                          ? "dropdown-item text-primary"
-                          : "dropdown-item"
+                        isActive ? "dropdown-item text-primary" : "dropdown-item"
                       }
                       to="/servicio2"
                     >
-                      Service 2
+                     Islands
                     </NavLink>
                   </li>
                   <li>
@@ -112,9 +122,7 @@ function NavBar() {
                   <li>
                     <NavLink
                       className={({ isActive }) =>
-                        isActive
-                          ? "dropdown-item text-primary"
-                          : "dropdown-item"
+                        isActive ? "dropdown-item text-primary" : "dropdown-item"
                       }
                       to="/servicio3"
                     >
@@ -123,29 +131,31 @@ function NavBar() {
                   </li>
                 </ul>
               </li>
+            </ul>
+
+            {/* Botones a la derecha (login / cuenta / ícono) */}
+            <div className="d-flex ms-auto flex-column flex-lg-row align-items-lg-center gap-2 mt-3 mt-lg-0">
               {!isLoggedIn ? (
                 <>
-                  <li className="nav-item">
-                    <button
-                      className="btn btn-outline-secondary"
-                      type="button"
-                      onClick={() => handleOnClick("signup")}
-                    >
-                      Create Account {/* Pagina de crear cuenta */}
-                    </button>
-                  </li>
-                  <li className="nav-item">
-                    <button
-                      className="btn btn-outline-secondary"
-                      type="button"
-                      onClick={() => handleOnClick("login")}
-                    >
-                      Log-in {/* Pagina de inicio de sesion */}
-                    </button>
-                  </li>
+                <div className="boton-container">
+                  <button
+                    className="btn boton-isa"
+                    type="button"
+                    onClick={() => handleOnClick("signup")}
+                  >
+                    Create Account
+                  </button>
+                  <button
+                    className="btn boton-isa"
+                    type="button"
+                    onClick={() => handleOnClick("login")}
+                  >
+                    Log-in
+                  </button>
+                  </div>
                 </>
               ) : (
-                <li className="nav-item dropdown">
+                <div className="dropdown">
                   <button
                     className="btn btn-outline-secondary rounded-circle p-2"
                     type="button"
@@ -153,7 +163,7 @@ function NavBar() {
                     aria-expanded="false"
                     style={{ backgroundColor: "#f8f9fa" }}
                   >
-                    <FaUserCircle size={30} /> {/* Icono de usuario */}
+                    <FaUserCircle size={30} />
                   </button>
                   <ul className="dropdown-menu">
                     <li>
@@ -162,9 +172,9 @@ function NavBar() {
                       </button>
                     </li>
                   </ul>
-                </li>
+                </div>
               )}
-            </ul>
+            </div>
           </div>
         </div>
       </nav>

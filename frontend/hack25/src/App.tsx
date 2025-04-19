@@ -8,6 +8,7 @@ import Signup from "./pages/Signup";
 
 function App() {
   const [user, setUser] = useState<{ name: string; email: string } | null>(
+    
     null
   );
   return (
