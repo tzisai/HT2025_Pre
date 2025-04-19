@@ -113,7 +113,7 @@ function NavBar() {
                       }
                       to="/servicio2"
                     >
-                     CEFA
+                     Islands
                     </NavLink>
                   </li>
                   <li>
