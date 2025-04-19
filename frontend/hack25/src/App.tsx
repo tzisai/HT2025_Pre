@@ -5,7 +5,7 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import Login from "./pages/Login";
 import Signup from "./pages/Signup";
-
+import ChatBot from "./pages/Chatbot";
 function App() {
   const [user, setUser] = useState<{ name: string; email: string } | null>(
     
@@ -18,6 +18,7 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/login" element={<Login setUser={setUser} />} />
         <Route path="/signup" element={<Signup />} />
+        <Route path="/chat_bot" element={<ChatBot />} />
       </Routes>
     </BrowserRouter>
   );

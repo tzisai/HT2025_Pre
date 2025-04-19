@@ -1,0 +1,46 @@
+.chatbot-container {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f4f4;
+  min-height: 100vh;
+  padding-top: 2rem;
+}
+
+#chat1 .card-header {
+  background-color: #0d6efd;
+  color: white;
+  border-bottom: 1px solid #ddd;
+}
+
+#chat1 .card-body {
+  background-color: #ffffff;
+  padding: 0rem;
+  overflow-y: auto;
+}
+
+#chat1 .card-footer {
+  background-color: #f8f9fa;
+  border-top: 0px solid #ddd;
+}
+
+#chat1 textarea.form-control {
+  resize: none;
+}
+
+.btn-info {
+  background-color: #0d6efd;
+  border-color: #0d6efd;
+  color: white;
+}
+
+.btn-info:hover {
+  background-color: #0b5ed7;
+  border-color: #0a58ca;
+}
+
+.bg-primary {
+  background-color: #0d6efd !important;
+}
+
+.bg-light {
+  background-color: #e9ecef !important;
+}

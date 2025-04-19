@@ -101,7 +101,7 @@ function NavBar() {
                       className={({ isActive }) =>
                         isActive ? "dropdown-item" : "dropdown-item"
                       }
-                      to="/servicio1"
+                      to="/chat_bot"
                     >
                       Nova-IA
                     </NavLink>
@@ -111,7 +111,7 @@ function NavBar() {
                       className={({ isActive }) =>
                         isActive ? "dropdown-item text-primary" : "dropdown-item"
                       }
-                      to="/servicio2"
+                      to=""
                     >
                      Islands
                     </NavLink>
