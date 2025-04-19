@@ -68,7 +68,7 @@ function Signup() {
   const verificarEmail = async (email: string) => {
     try {
       const response = await fetch(
-        "https://us-central1-sophonsdb.cloudfunctions.net/verificarDominioEmail",
+        "https://us-central1-sophons-db.cloudfunctions.net/verificarDominioEmail",
         {
           method: "POST",
           headers: {
