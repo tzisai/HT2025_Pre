@@ -1,0 +1,797 @@
+Posting Date,Day of the Week,Amount,Category,Description,Source
+01/01/24,Monday,-1887.99,Bills,Rent,Chase Debit Card
+01/01/24,Monday,3062.06,Wire Transfer,Tuition,American Express Credit Card
+01/05/24,Friday,-650.78,Merchandise,Amazon,M&T Debit Card
+01/06/24,Saturday,1754.16,Groceries,Farmer's Market,M&T Debit Card
+01/07/24,Sunday,-1858.41,Merchandise,Electronics,American Express Credit Card
+01/07/24,Sunday,4097.36,Entertainment,Concert,American Express Credit Card
+01/07/24,Sunday,-395.02,Groceries,Farmer's Market,Discover Credit Card
+01/08/24,Monday,4495.96,Pharmacy,Medicine,American Express Credit Card
+01/08/24,Monday,4284.93,Bills,Electricity,Discover Credit Card
+01/08/24,Monday,-420.65,Merchandise,Clothes,M&T Debit Card
+01/08/24,Monday,4215.82,Food,Restaurant,M&T Debit Card
+01/09/24,Tuesday,266.54,Groceries,Online Grocery,Discover Credit Card
+01/09/24,Tuesday,1523.07,Travel,Hotel,Chase Debit Card
+01/09/24,Tuesday,3329.18,Food,Restaurant,M&T Debit Card
+01/10/24,Wednesday,4658.34,Groceries,Online Grocery,American Express Credit Card
+01/10/24,Wednesday,-1228.2,Travel,Gas,Chase Debit Card
+01/10/24,Wednesday,-639.61,Groceries,Supermarket,Chase Debit Card
+01/11/24,Thursday,4116.91,Wire Transfer,Salary,Discover Credit Card
+01/11/24,Thursday,-500.01,Wire Transfer,Salary,M&T Debit Card
+01/11/24,Thursday,2794.54,Entertainment,Movies,Chase Debit Card
+01/11/24,Thursday,-405.22,Merchandise,Makeup/Skin Care,Discover Credit Card
+01/12/24,Friday,4215.72,Entertainment,Games,American Express Credit Card
+01/13/24,Saturday,-1550.9,Food,Delivery,American Express Credit Card
+01/13/24,Saturday,3652.22,Merchandise,Electronics,M&T Debit Card
+01/15/24,Monday,2112.27,Bills,Water,American Express Credit Card
+01/16/24,Tuesday,4806.24,Merchandise,Clothes,American Express Credit Card
+01/16/24,Tuesday,2860.51,Wire Transfer,Loan Payment,American Express Credit Card
+01/17/24,Wednesday,1654.97,Pharmacy,Medicine,M&T Debit Card
+01/17/24,Wednesday,1049.25,Pharmacy,Health Products,Chase Debit Card
+01/18/24,Thursday,2025.52,Food,Restaurant,American Express Credit Card
+01/19/24,Friday,-1334.59,Bills,Rent,M&T Debit Card
+01/19/24,Friday,-454.7,Travel,Car Rental,Discover Credit Card
+01/20/24,Saturday,1023.26,Pharmacy,Medicine,M&T Debit Card
+01/20/24,Saturday,-29.34,Pharmacy,Prescriptions,M&T Debit Card
+01/22/24,Monday,3266.32,Groceries,Online Grocery,M&T Debit Card
+01/22/24,Monday,3750.11,Wire Transfer,Loan Payment,American Express Credit Card
+01/23/24,Tuesday,1746.88,Wire Transfer,Loan Payment,American Express Credit Card
+01/23/24,Tuesday,-1700.01,Travel,Hotel,Chase Debit Card
+01/24/24,Wednesday,4404.49,Merchandise,Electronics,Discover Credit Card
+01/25/24,Thursday,4819.13,Wire Transfer,Savings Transfer,Discover Credit Card
+01/25/24,Thursday,-1176.76,Merchandise,Clothes,Discover Credit Card
+01/27/24,Saturday,1896.27,Wire Transfer,Salary,American Express Credit Card
+01/27/24,Saturday,597.66,Merchandise,Amazon,Discover Credit Card
+01/28/24,Sunday,2320.84,Entertainment,Concert,American Express Credit Card
+01/29/24,Monday,-1629.31,Bills,Internet,M&T Debit Card
+01/29/24,Monday,3651.94,Pharmacy,Health Products,Chase Debit Card
+01/29/24,Monday,1353.19,Wire Transfer,Savings Transfer,M&T Debit Card
+01/31/24,Wednesday,3857.45,Bills,Rent,Discover Credit Card
+02/01/24,Thursday,787.12,Wire Transfer,Savings Transfer,American Express Credit Card
+02/01/24,Thursday,3819.93,Merchandise,Clothes,Chase Debit Card
+02/01/24,Thursday,-1033.24,Merchandise,Electronics,Chase Debit Card
+02/02/24,Friday,-1259.66,Pharmacy,Health Products,American Express Credit Card
+02/03/24,Saturday,-670.01,Merchandise,Electronics,Discover Credit Card
+02/04/24,Sunday,1666.75,Food,Coffee Shop,Discover Credit Card
+02/04/24,Sunday,3397.26,Wire Transfer,Salary,M&T Debit Card
+02/04/24,Sunday,2278.85,Wire Transfer,Loan Payment,M&T Debit Card
+02/04/24,Sunday,3423.44,Pharmacy,Medicine,Discover Credit Card
+02/05/24,Monday,388.31,Pharmacy,Medicine,M&T Debit Card
+02/05/24,Monday,3213.11,Entertainment,Movies,Chase Debit Card
+02/05/24,Monday,-303.72,Pharmacy,Medicine,American Express Credit Card
+02/05/24,Monday,3818.69,Pharmacy,Prescriptions,Chase Debit Card
+02/06/24,Tuesday,-1551.92,Entertainment,Movies,Chase Debit Card
+02/07/24,Wednesday,-1131.24,Groceries,Online Grocery,American Express Credit Card
+02/07/24,Wednesday,-1928.49,Bills,Internet,Discover Credit Card
+02/08/24,Thursday,-1013.61,Bills,Rent,M&T Debit Card
+02/08/24,Thursday,-1911.51,Groceries,Farmer's Market,Chase Debit Card
+02/08/24,Thursday,3952.6,Wire Transfer,Savings Transfer,Chase Debit Card
+02/08/24,Thursday,4268.44,Travel,Hotel,Discover Credit Card
+02/09/24,Friday,-885.59,Wire Transfer,Loan Payment,American Express Credit Card
+02/10/24,Saturday,4998.03,Pharmacy,Prescriptions,Chase Debit Card
+02/12/24,Monday,-1545.45,Bills,Internet,Chase Debit Card
+02/13/24,Tuesday,-185.98,Food,Fast Food,Chase Debit Card
+02/14/24,Wednesday,2491.06,Pharmacy,Health Products,Chase Debit Card
+02/14/24,Wednesday,-508.22,Bills,Internet,M&T Debit Card
+02/14/24,Wednesday,-2.35,Entertainment,Concert,Discover Credit Card
+02/14/24,Wednesday,350.94,Bills,Electricity,American Express Credit Card
+02/14/24,Wednesday,422.91,Entertainment,Movies,M&T Debit Card
+02/15/24,Thursday,3688.33,Food,Fast Food,Chase Debit Card
+02/15/24,Thursday,2661.98,Pharmacy,Health Products,Chase Debit Card
+02/15/24,Thursday,697.81,Pharmacy,Health Products,Discover Credit Card
+02/16/24,Friday,-1409.09,Travel,Flight,American Express Credit Card
+02/16/24,Friday,2348.76,Travel,Gas,American Express Credit Card
+02/17/24,Saturday,1359.8,Travel,Gas,Discover Credit Card
+02/17/24,Saturday,4688.94,Travel,Gas,Chase Debit Card
+02/18/24,Sunday,4462.12,Entertainment,Streaming Services,Chase Debit Card
+02/19/24,Monday,4784.26,Travel,Car Rental,American Express Credit Card
+02/19/24,Monday,-1184.24,Pharmacy,Medicine,M&T Debit Card
+02/20/24,Tuesday,3611.63,Travel,Hotel,American Express Credit Card
+02/22/24,Thursday,4618.44,Entertainment,Streaming Services,Discover Credit Card
+02/22/24,Thursday,-514.82,Merchandise,Electronics,Discover Credit Card
+02/23/24,Friday,-1607.69,Merchandise,Clothes,Chase Debit Card
+02/24/24,Saturday,968.26,Pharmacy,Medicine,Chase Debit Card
+02/24/24,Saturday,1475.49,Travel,Car Rental,M&T Debit Card
+02/25/24,Sunday,1547.41,Entertainment,Games,Chase Debit Card
+02/25/24,Sunday,1231.07,Food,Restaurant,American Express Credit Card
+02/25/24,Sunday,-801.66,Food,Delivery,American Express Credit Card
+02/26/24,Monday,-146.2,Merchandise,Amazon,Chase Debit Card
+02/26/24,Monday,835.72,Bills,Electricity,American Express Credit Card
+02/26/24,Monday,2434.82,Bills,Water,American Express Credit Card
+02/27/24,Tuesday,-1538.61,Food,Coffee Shop,American Express Credit Card
+02/27/24,Tuesday,4841.23,Groceries,Online Grocery,M&T Debit Card
+02/27/24,Tuesday,2849.21,Wire Transfer,Loan Payment,Discover Credit Card
+02/28/24,Wednesday,807.61,Pharmacy,Medicine,Discover Credit Card
+02/28/24,Wednesday,52.43,Merchandise,Makeup/Skin Care,Discover Credit Card
+02/29/24,Thursday,-972.15,Bills,Rent,M&T Debit Card
+03/01/24,Friday,3516.4,Travel,Car Rental,Discover Credit Card
+03/02/24,Saturday,1119.45,Pharmacy,Health Products,Discover Credit Card
+03/02/24,Saturday,-81.55,Bills,Rent,American Express Credit Card
+03/02/24,Saturday,-851.97,Merchandise,Clothes,Chase Debit Card
+03/02/24,Saturday,2382.15,Travel,Flight,M&T Debit Card
+03/02/24,Saturday,1678.48,Pharmacy,Health Products,Discover Credit Card
+03/03/24,Sunday,3466.72,Pharmacy,Health Products,Chase Debit Card
+03/03/24,Sunday,3807.26,Bills,Electricity,American Express Credit Card
+03/04/24,Monday,4774.02,Wire Transfer,Savings Transfer,Discover Credit Card
+03/05/24,Tuesday,1757.87,Groceries,Supermarket,M&T Debit Card
+03/07/24,Thursday,-1501.51,Food,Fast Food,American Express Credit Card
+03/07/24,Thursday,1527.0,Merchandise,Makeup/Skin Care,American Express Credit Card
+03/08/24,Friday,-238.49,Entertainment,Streaming Services,American Express Credit Card
+03/09/24,Saturday,4412.33,Merchandise,Amazon,M&T Debit Card
+03/09/24,Saturday,875.62,Pharmacy,Health Products,M&T Debit Card
+03/09/24,Saturday,1910.24,Groceries,Supermarket,M&T Debit Card
+03/10/24,Sunday,1534.46,Bills,Water,M&T Debit Card
+03/11/24,Monday,-1694.5,Bills,Rent,American Express Credit Card
+03/11/24,Monday,1476.24,Wire Transfer,Savings Transfer,Chase Debit Card
+03/12/24,Tuesday,2842.02,Bills,Internet,American Express Credit Card
+03/12/24,Tuesday,2290.0,Entertainment,Games,Chase Debit Card
+03/13/24,Wednesday,1641.65,Wire Transfer,Salary,American Express Credit Card
+03/14/24,Thursday,2008.17,Groceries,Supermarket,Chase Debit Card
+03/14/24,Thursday,2822.31,Merchandise,Amazon,American Express Credit Card
+03/14/24,Thursday,542.92,Pharmacy,Prescriptions,Chase Debit Card
+03/15/24,Friday,797.77,Food,Fast Food,Chase Debit Card
+03/15/24,Friday,1938.15,Travel,Gas,M&T Debit Card
+03/16/24,Saturday,4998.1,Food,Fast Food,American Express Credit Card
+03/16/24,Saturday,1533.03,Merchandise,Electronics,Discover Credit Card
+03/17/24,Sunday,234.93,Food,Coffee Shop,American Express Credit Card
+03/18/24,Monday,-361.24,Merchandise,Clothes,Discover Credit Card
+03/18/24,Monday,-932.1,Food,Delivery,American Express Credit Card
+03/19/24,Tuesday,-1564.22,Pharmacy,Health Products,M&T Debit Card
+03/19/24,Tuesday,-1381.51,Entertainment,Games,Chase Debit Card
+03/20/24,Wednesday,2000.12,Travel,Hotel,M&T Debit Card
+03/20/24,Wednesday,4325.44,Bills,Internet,American Express Credit Card
+03/20/24,Wednesday,4747.72,Bills,Electricity,M&T Debit Card
+03/20/24,Wednesday,2407.3,Entertainment,Streaming Services,Discover Credit Card
+03/21/24,Thursday,4784.6,Food,Coffee Shop,Chase Debit Card
+03/21/24,Thursday,3286.44,Entertainment,Movies,Discover Credit Card
+03/21/24,Thursday,3435.88,Groceries,Supermarket,Chase Debit Card
+03/21/24,Thursday,3799.16,Food,Coffee Shop,Discover Credit Card
+03/21/24,Thursday,1537.01,Travel,Car Rental,M&T Debit Card
+03/22/24,Friday,1690.45,Food,Restaurant,Discover Credit Card
+03/23/24,Saturday,4421.33,Merchandise,Amazon,M&T Debit Card
+03/24/24,Sunday,3052.99,Travel,Hotel,M&T Debit Card
+03/25/24,Monday,959.45,Entertainment,Movies,Discover Credit Card
+03/25/24,Monday,4685.14,Bills,Internet,Chase Debit Card
+03/27/24,Wednesday,2020.04,Entertainment,Streaming Services,Chase Debit Card
+03/29/24,Friday,343.43,Bills,Water,Chase Debit Card
+03/29/24,Friday,1694.93,Merchandise,Electronics,M&T Debit Card
+03/29/24,Friday,1184.64,Food,Restaurant,Chase Debit Card
+03/30/24,Saturday,3605.52,Pharmacy,Medicine,M&T Debit Card
+03/31/24,Sunday,1567.49,Entertainment,Games,Discover Credit Card
+04/01/24,Monday,3483.33,Pharmacy,Medicine,M&T Debit Card
+04/02/24,Tuesday,-182.14,Travel,Flight,Chase Debit Card
+04/02/24,Tuesday,1706.44,Food,Fast Food,American Express Credit Card
+04/02/24,Tuesday,4671.93,Bills,Water,American Express Credit Card
+04/04/24,Thursday,4639.83,Wire Transfer,Savings Transfer,American Express Credit Card
+04/05/24,Friday,3209.13,Travel,Hotel,Discover Credit Card
+04/05/24,Friday,2647.79,Entertainment,Concert,American Express Credit Card
+04/05/24,Friday,1711.25,Groceries,Online Grocery,Chase Debit Card
+04/06/24,Saturday,-234.09,Entertainment,Concert,Chase Debit Card
+04/06/24,Saturday,-154.49,Pharmacy,Prescriptions,M&T Debit Card
+04/07/24,Sunday,3065.01,Wire Transfer,Savings Transfer,Chase Debit Card
+04/07/24,Sunday,2887.3,Merchandise,Electronics,American Express Credit Card
+04/07/24,Sunday,152.43,Food,Restaurant,Chase Debit Card
+04/08/24,Monday,-1674.96,Travel,Gas,Discover Credit Card
+04/08/24,Monday,1508.57,Bills,Internet,M&T Debit Card
+04/08/24,Monday,4271.44,Pharmacy,Prescriptions,Chase Debit Card
+04/09/24,Tuesday,-893.54,Entertainment,Concert,American Express Credit Card
+04/09/24,Tuesday,3974.8,Wire Transfer,Loan Payment,American Express Credit Card
+04/11/24,Thursday,3104.29,Bills,Electricity,Chase Debit Card
+04/12/24,Friday,3215.18,Groceries,Online Grocery,American Express Credit Card
+04/12/24,Friday,-1537.0,Bills,Rent,American Express Credit Card
+04/12/24,Friday,4285.64,Food,Fast Food,American Express Credit Card
+04/12/24,Friday,1186.47,Food,Restaurant,Discover Credit Card
+04/12/24,Friday,588.02,Entertainment,Movies,Chase Debit Card
+04/13/24,Saturday,3083.2,Travel,Flight,American Express Credit Card
+04/13/24,Saturday,1162.95,Pharmacy,Medicine,Discover Credit Card
+04/14/24,Sunday,-1228.86,Bills,Internet,Discover Credit Card
+04/14/24,Sunday,4217.51,Merchandise,Electronics,M&T Debit Card
+04/16/24,Tuesday,1433.08,Wire Transfer,Tuition,American Express Credit Card
+04/16/24,Tuesday,118.26,Wire Transfer,Loan Payment,Discover Credit Card
+04/17/24,Wednesday,4618.87,Pharmacy,Prescriptions,Chase Debit Card
+04/18/24,Thursday,2603.26,Travel,Gas,Discover Credit Card
+04/19/24,Friday,-33.98,Bills,Electricity,M&T Debit Card
+04/20/24,Saturday,-1980.83,Bills,Internet,M&T Debit Card
+04/21/24,Sunday,2214.62,Wire Transfer,Loan Payment,American Express Credit Card
+04/21/24,Sunday,2343.2,Groceries,Supermarket,American Express Credit Card
+04/22/24,Monday,-380.46,Groceries,Supermarket,Chase Debit Card
+04/23/24,Tuesday,3510.71,Entertainment,Games,Discover Credit Card
+04/23/24,Tuesday,2414.98,Wire Transfer,Salary,Discover Credit Card
+04/24/24,Wednesday,-1036.2,Entertainment,Streaming Services,M&T Debit Card
+04/25/24,Thursday,-1124.58,Groceries,Supermarket,American Express Credit Card
+04/25/24,Thursday,4312.99,Entertainment,Concert,American Express Credit Card
+04/26/24,Friday,1361.44,Entertainment,Games,Chase Debit Card
+04/26/24,Friday,3498.02,Wire Transfer,Salary,Chase Debit Card
+04/27/24,Saturday,4991.39,Groceries,Supermarket,Discover Credit Card
+04/28/24,Sunday,4239.95,Merchandise,Makeup/Skin Care,American Express Credit Card
+04/29/24,Monday,4694.99,Entertainment,Games,M&T Debit Card
+04/30/24,Tuesday,-1337.84,Bills,Internet,American Express Credit Card
+04/30/24,Tuesday,-808.68,Food,Delivery,Chase Debit Card
+04/30/24,Tuesday,3621.92,Pharmacy,Health Products,Chase Debit Card
+05/02/24,Thursday,4564.56,Groceries,Supermarket,Chase Debit Card
+05/02/24,Thursday,-154.27,Wire Transfer,Loan Payment,Discover Credit Card
+05/03/24,Friday,147.2,Bills,Rent,Discover Credit Card
+05/04/24,Saturday,4710.17,Travel,Hotel,Discover Credit Card
+05/04/24,Saturday,224.03,Bills,Water,Chase Debit Card
+05/05/24,Sunday,4083.44,Merchandise,Clothes,M&T Debit Card
+05/06/24,Monday,-617.86,Pharmacy,Medicine,Chase Debit Card
+05/06/24,Monday,3958.39,Pharmacy,Prescriptions,M&T Debit Card
+05/07/24,Tuesday,1569.8,Merchandise,Makeup/Skin Care,Discover Credit Card
+05/07/24,Tuesday,1239.34,Merchandise,Clothes,M&T Debit Card
+05/08/24,Wednesday,1264.97,Pharmacy,Prescriptions,M&T Debit Card
+05/08/24,Wednesday,3913.44,Food,Restaurant,American Express Credit Card
+05/09/24,Thursday,145.39,Bills,Internet,Discover Credit Card
+05/09/24,Thursday,2703.55,Wire Transfer,Loan Payment,American Express Credit Card
+05/11/24,Saturday,2157.1,Entertainment,Concert,Discover Credit Card
+05/12/24,Sunday,-534.11,Entertainment,Games,M&T Debit Card
+05/13/24,Monday,3566.49,Groceries,Farmer's Market,Chase Debit Card
+05/14/24,Tuesday,-1782.62,Groceries,Supermarket,Chase Debit Card
+05/14/24,Tuesday,762.21,Groceries,Supermarket,American Express Credit Card
+05/14/24,Tuesday,4244.19,Bills,Rent,American Express Credit Card
+05/15/24,Wednesday,1959.39,Groceries,Supermarket,Discover Credit Card
+05/15/24,Wednesday,1273.56,Food,Coffee Shop,M&T Debit Card
+05/15/24,Wednesday,-1434.01,Food,Fast Food,M&T Debit Card
+05/17/24,Friday,1149.05,Food,Fast Food,Chase Debit Card
+05/17/24,Friday,2772.56,Bills,Electricity,M&T Debit Card
+05/17/24,Friday,247.24,Food,Delivery,Discover Credit Card
+05/18/24,Saturday,1587.27,Pharmacy,Medicine,Discover Credit Card
+05/20/24,Monday,28.98,Wire Transfer,Savings Transfer,Discover Credit Card
+05/21/24,Tuesday,155.74,Pharmacy,Health Products,Discover Credit Card
+05/21/24,Tuesday,-1819.76,Merchandise,Electronics,Discover Credit Card
+05/23/24,Thursday,4687.48,Merchandise,Electronics,Chase Debit Card
+05/23/24,Thursday,3469.28,Wire Transfer,Tuition,American Express Credit Card
+05/23/24,Thursday,1627.32,Groceries,Supermarket,Discover Credit Card
+05/24/24,Friday,1556.2,Food,Delivery,American Express Credit Card
+05/25/24,Saturday,761.83,Groceries,Supermarket,Chase Debit Card
+05/25/24,Saturday,2761.83,Food,Delivery,Discover Credit Card
+05/26/24,Sunday,-1308.37,Groceries,Supermarket,American Express Credit Card
+05/27/24,Monday,600.47,Travel,Hotel,M&T Debit Card
+05/27/24,Monday,181.07,Groceries,Farmer's Market,M&T Debit Card
+05/28/24,Tuesday,96.11,Wire Transfer,Loan Payment,Chase Debit Card
+05/28/24,Tuesday,3136.62,Merchandise,Makeup/Skin Care,American Express Credit Card
+05/29/24,Wednesday,3707.86,Travel,Hotel,Chase Debit Card
+05/30/24,Thursday,-1615.33,Entertainment,Concert,Discover Credit Card
+05/30/24,Thursday,3482.52,Merchandise,Clothes,M&T Debit Card
+05/30/24,Thursday,1939.72,Wire Transfer,Salary,Chase Debit Card
+05/30/24,Thursday,-636.4,Food,Coffee Shop,M&T Debit Card
+06/02/24,Sunday,-748.37,Entertainment,Movies,M&T Debit Card
+06/02/24,Sunday,3919.97,Merchandise,Clothes,Discover Credit Card
+06/03/24,Monday,4435.67,Pharmacy,Health Products,American Express Credit Card
+06/03/24,Monday,-1033.08,Wire Transfer,Loan Payment,M&T Debit Card
+06/05/24,Wednesday,2718.47,Merchandise,Clothes,Discover Credit Card
+06/06/24,Thursday,227.61,Wire Transfer,Salary,Discover Credit Card
+06/06/24,Thursday,-204.37,Wire Transfer,Savings Transfer,American Express Credit Card
+06/06/24,Thursday,-1804.19,Food,Fast Food,American Express Credit Card
+06/07/24,Friday,2536.82,Groceries,Online Grocery,M&T Debit Card
+06/07/24,Friday,-1788.8,Entertainment,Streaming Services,M&T Debit Card
+06/08/24,Saturday,35.95,Merchandise,Clothes,American Express Credit Card
+06/09/24,Sunday,3244.56,Merchandise,Electronics,Discover Credit Card
+06/10/24,Monday,4917.45,Entertainment,Streaming Services,Discover Credit Card
+06/11/24,Tuesday,3263.28,Wire Transfer,Salary,Chase Debit Card
+06/12/24,Wednesday,4168.25,Entertainment,Movies,Discover Credit Card
+06/12/24,Wednesday,2525.51,Merchandise,Makeup/Skin Care,Discover Credit Card
+06/12/24,Wednesday,-579.74,Travel,Hotel,Discover Credit Card
+06/14/24,Friday,2992.52,Groceries,Supermarket,American Express Credit Card
+06/14/24,Friday,4232.92,Bills,Internet,Chase Debit Card
+06/15/24,Saturday,1921.18,Entertainment,Movies,Chase Debit Card
+06/15/24,Saturday,-134.45,Entertainment,Movies,Discover Credit Card
+06/15/24,Saturday,180.04,Wire Transfer,Salary,M&T Debit Card
+06/15/24,Saturday,3291.71,Groceries,Farmer's Market,Discover Credit Card
+06/16/24,Sunday,-1559.04,Pharmacy,Health Products,Discover Credit Card
+06/16/24,Sunday,4129.52,Travel,Hotel,Chase Debit Card
+06/17/24,Monday,2936.64,Travel,Car Rental,Discover Credit Card
+06/17/24,Monday,-463.4,Groceries,Supermarket,M&T Debit Card
+06/18/24,Tuesday,4336.92,Merchandise,Makeup/Skin Care,M&T Debit Card
+06/18/24,Tuesday,3011.1,Travel,Flight,American Express Credit Card
+06/18/24,Tuesday,1669.03,Bills,Water,American Express Credit Card
+06/19/24,Wednesday,3158.92,Merchandise,Makeup/Skin Care,American Express Credit Card
+06/20/24,Thursday,-1204.22,Entertainment,Concert,American Express Credit Card
+06/20/24,Thursday,2422.26,Food,Coffee Shop,M&T Debit Card
+06/20/24,Thursday,1687.59,Pharmacy,Medicine,American Express Credit Card
+06/21/24,Friday,1374.66,Merchandise,Amazon,Discover Credit Card
+06/22/24,Saturday,3775.85,Food,Restaurant,American Express Credit Card
+06/23/24,Sunday,438.89,Merchandise,Electronics,Discover Credit Card
+06/23/24,Sunday,-1711.67,Food,Restaurant,M&T Debit Card
+06/23/24,Sunday,2261.26,Entertainment,Games,American Express Credit Card
+06/24/24,Monday,1146.47,Travel,Car Rental,M&T Debit Card
+06/24/24,Monday,1740.87,Pharmacy,Prescriptions,Chase Debit Card
+06/24/24,Monday,1439.25,Groceries,Online Grocery,M&T Debit Card
+06/24/24,Monday,-1794.86,Bills,Water,Discover Credit Card
+06/24/24,Monday,-17.77,Bills,Electricity,Chase Debit Card
+06/24/24,Monday,4290.2,Pharmacy,Health Products,M&T Debit Card
+06/25/24,Tuesday,4413.02,Bills,Rent,M&T Debit Card
+06/25/24,Tuesday,2173.18,Merchandise,Clothes,Discover Credit Card
+06/26/24,Wednesday,953.3,Merchandise,Clothes,M&T Debit Card
+06/27/24,Thursday,-819.06,Bills,Internet,M&T Debit Card
+06/27/24,Thursday,3796.93,Wire Transfer,Tuition,American Express Credit Card
+06/27/24,Thursday,4914.82,Merchandise,Amazon,American Express Credit Card
+06/28/24,Friday,4222.2,Wire Transfer,Loan Payment,M&T Debit Card
+06/29/24,Saturday,4472.88,Wire Transfer,Savings Transfer,M&T Debit Card
+06/30/24,Sunday,-1323.46,Food,Restaurant,Chase Debit Card
+06/30/24,Sunday,1788.28,Groceries,Online Grocery,M&T Debit Card
+06/30/24,Sunday,4651.03,Groceries,Online Grocery,M&T Debit Card
+07/02/24,Tuesday,1260.03,Bills,Electricity,Chase Debit Card
+07/03/24,Wednesday,313.24,Food,Delivery,Chase Debit Card
+07/03/24,Wednesday,4402.31,Travel,Hotel,Chase Debit Card
+07/03/24,Wednesday,-1303.34,Bills,Rent,American Express Credit Card
+07/04/24,Thursday,3116.58,Entertainment,Streaming Services,American Express Credit Card
+07/05/24,Friday,4077.75,Bills,Electricity,Discover Credit Card
+07/05/24,Friday,3883.16,Food,Fast Food,Chase Debit Card
+07/05/24,Friday,3370.22,Pharmacy,Prescriptions,Chase Debit Card
+07/07/24,Sunday,492.03,Wire Transfer,Savings Transfer,M&T Debit Card
+07/09/24,Tuesday,3613.76,Wire Transfer,Tuition,Chase Debit Card
+07/10/24,Wednesday,1714.35,Food,Delivery,Chase Debit Card
+07/10/24,Wednesday,-220.5,Pharmacy,Medicine,Chase Debit Card
+07/10/24,Wednesday,2260.44,Travel,Gas,M&T Debit Card
+07/10/24,Wednesday,1308.17,Pharmacy,Prescriptions,American Express Credit Card
+07/11/24,Thursday,2149.54,Food,Coffee Shop,Chase Debit Card
+07/12/24,Friday,4798.56,Food,Coffee Shop,M&T Debit Card
+07/13/24,Saturday,3281.0,Entertainment,Concert,Chase Debit Card
+07/13/24,Saturday,861.57,Food,Delivery,Discover Credit Card
+07/15/24,Monday,1025.11,Travel,Hotel,M&T Debit Card
+07/15/24,Monday,3353.47,Food,Restaurant,American Express Credit Card
+07/16/24,Tuesday,851.6,Merchandise,Clothes,M&T Debit Card
+07/17/24,Wednesday,-1746.28,Entertainment,Games,Chase Debit Card
+07/17/24,Wednesday,2698.78,Merchandise,Electronics,American Express Credit Card
+07/19/24,Friday,-157.15,Bills,Rent,M&T Debit Card
+07/20/24,Saturday,-1997.66,Pharmacy,Prescriptions,Chase Debit Card
+07/20/24,Saturday,1724.93,Merchandise,Electronics,Discover Credit Card
+07/22/24,Monday,3425.87,Entertainment,Streaming Services,M&T Debit Card
+07/22/24,Monday,1817.84,Entertainment,Games,American Express Credit Card
+07/23/24,Tuesday,-205.76,Bills,Rent,American Express Credit Card
+07/23/24,Tuesday,-304.51,Food,Fast Food,Discover Credit Card
+07/24/24,Wednesday,2576.2,Groceries,Farmer's Market,Chase Debit Card
+07/24/24,Wednesday,4488.55,Pharmacy,Medicine,M&T Debit Card
+07/25/24,Thursday,-1.11,Bills,Electricity,Discover Credit Card
+07/25/24,Thursday,1946.59,Merchandise,Clothes,American Express Credit Card
+07/29/24,Monday,4316.82,Food,Delivery,Chase Debit Card
+07/31/24,Wednesday,2569.53,Merchandise,Amazon,M&T Debit Card
+07/31/24,Wednesday,-230.79,Bills,Internet,M&T Debit Card
+08/01/24,Thursday,385.84,Food,Restaurant,American Express Credit Card
+08/03/24,Saturday,3051.28,Travel,Car Rental,American Express Credit Card
+08/03/24,Saturday,-1654.22,Entertainment,Movies,Discover Credit Card
+08/03/24,Saturday,2564.43,Wire Transfer,Savings Transfer,M&T Debit Card
+08/03/24,Saturday,4887.25,Pharmacy,Prescriptions,Chase Debit Card
+08/04/24,Sunday,3285.87,Bills,Electricity,Discover Credit Card
+08/04/24,Sunday,4750.47,Wire Transfer,Loan Payment,Discover Credit Card
+08/06/24,Tuesday,-576.12,Groceries,Supermarket,American Express Credit Card
+08/06/24,Tuesday,-287.12,Entertainment,Streaming Services,American Express Credit Card
+08/06/24,Tuesday,-1919.74,Merchandise,Amazon,American Express Credit Card
+08/07/24,Wednesday,866.93,Entertainment,Streaming Services,M&T Debit Card
+08/07/24,Wednesday,3482.29,Wire Transfer,Tuition,M&T Debit Card
+08/07/24,Wednesday,-5.15,Entertainment,Games,Discover Credit Card
+08/08/24,Thursday,2712.37,Groceries,Farmer's Market,M&T Debit Card
+08/10/24,Saturday,-608.41,Food,Delivery,M&T Debit Card
+08/11/24,Sunday,2670.08,Travel,Car Rental,M&T Debit Card
+08/12/24,Monday,2657.6,Merchandise,Amazon,Discover Credit Card
+08/13/24,Tuesday,-1553.67,Entertainment,Streaming Services,M&T Debit Card
+08/14/24,Wednesday,-953.79,Travel,Hotel,Discover Credit Card
+08/15/24,Thursday,-1450.62,Groceries,Farmer's Market,Discover Credit Card
+08/15/24,Thursday,3468.15,Groceries,Online Grocery,Discover Credit Card
+08/15/24,Thursday,-362.23,Food,Coffee Shop,M&T Debit Card
+08/16/24,Friday,4587.56,Wire Transfer,Savings Transfer,Discover Credit Card
+08/16/24,Friday,-65.1,Pharmacy,Prescriptions,Chase Debit Card
+08/17/24,Saturday,2858.87,Groceries,Online Grocery,M&T Debit Card
+08/17/24,Saturday,2237.88,Pharmacy,Prescriptions,American Express Credit Card
+08/20/24,Tuesday,-1246.63,Merchandise,Amazon,Discover Credit Card
+08/22/24,Thursday,947.2,Travel,Hotel,Discover Credit Card
+08/22/24,Thursday,-243.6,Food,Coffee Shop,American Express Credit Card
+08/23/24,Friday,-1678.75,Wire Transfer,Savings Transfer,M&T Debit Card
+08/23/24,Friday,-717.86,Bills,Rent,Chase Debit Card
+08/24/24,Saturday,3819.59,Food,Delivery,Chase Debit Card
+08/24/24,Saturday,4368.16,Wire Transfer,Loan Payment,M&T Debit Card
+08/26/24,Monday,1420.88,Wire Transfer,Tuition,Chase Debit Card
+08/26/24,Monday,2178.94,Bills,Internet,M&T Debit Card
+08/26/24,Monday,1962.22,Food,Delivery,American Express Credit Card
+08/26/24,Monday,3625.32,Merchandise,Electronics,American Express Credit Card
+08/26/24,Monday,2905.57,Groceries,Online Grocery,M&T Debit Card
+08/27/24,Tuesday,2743.48,Bills,Electricity,American Express Credit Card
+08/27/24,Tuesday,-1708.86,Merchandise,Electronics,Chase Debit Card
+08/27/24,Tuesday,-868.72,Pharmacy,Health Products,Chase Debit Card
+08/27/24,Tuesday,-792.43,Travel,Flight,Discover Credit Card
+08/28/24,Wednesday,444.49,Pharmacy,Health Products,M&T Debit Card
+08/29/24,Thursday,3199.58,Groceries,Online Grocery,M&T Debit Card
+08/30/24,Friday,1228.43,Merchandise,Electronics,Discover Credit Card
+08/31/24,Saturday,3611.72,Merchandise,Makeup/Skin Care,Chase Debit Card
+09/01/24,Sunday,4906.47,Merchandise,Makeup/Skin Care,American Express Credit Card
+09/01/24,Sunday,610.98,Pharmacy,Medicine,American Express Credit Card
+09/01/24,Sunday,2570.72,Merchandise,Amazon,Chase Debit Card
+09/02/24,Monday,1657.46,Travel,Flight,Chase Debit Card
+09/02/24,Monday,3788.29,Food,Delivery,Chase Debit Card
+09/02/24,Monday,-1317.54,Entertainment,Streaming Services,M&T Debit Card
+09/03/24,Tuesday,835.21,Pharmacy,Prescriptions,M&T Debit Card
+09/05/24,Thursday,825.67,Bills,Internet,American Express Credit Card
+09/06/24,Friday,-807.73,Merchandise,Electronics,American Express Credit Card
+09/06/24,Friday,3752.8,Wire Transfer,Savings Transfer,American Express Credit Card
+09/07/24,Saturday,-1374.07,Travel,Hotel,Chase Debit Card
+09/08/24,Sunday,2610.16,Food,Fast Food,American Express Credit Card
+09/08/24,Sunday,103.29,Merchandise,Clothes,Chase Debit Card
+09/09/24,Monday,-1175.14,Wire Transfer,Savings Transfer,Chase Debit Card
+09/10/24,Tuesday,-413.52,Entertainment,Movies,M&T Debit Card
+09/11/24,Wednesday,4293.59,Merchandise,Amazon,Discover Credit Card
+09/12/24,Thursday,4964.9,Wire Transfer,Loan Payment,Chase Debit Card
+09/13/24,Friday,-1415.74,Wire Transfer,Salary,Chase Debit Card
+09/13/24,Friday,4680.85,Groceries,Online Grocery,Discover Credit Card
+09/15/24,Sunday,765.88,Merchandise,Clothes,Discover Credit Card
+09/17/24,Tuesday,-1907.63,Groceries,Online Grocery,Discover Credit Card
+09/17/24,Tuesday,1101.81,Groceries,Online Grocery,Discover Credit Card
+09/17/24,Tuesday,-1848.5,Bills,Water,Discover Credit Card
+09/17/24,Tuesday,-650.07,Bills,Rent,Discover Credit Card
+09/18/24,Wednesday,-393.17,Food,Coffee Shop,M&T Debit Card
+09/19/24,Thursday,4837.15,Entertainment,Streaming Services,M&T Debit Card
+09/20/24,Friday,858.03,Wire Transfer,Savings Transfer,Chase Debit Card
+09/20/24,Friday,3832.75,Travel,Hotel,Discover Credit Card
+09/21/24,Saturday,3396.55,Food,Restaurant,M&T Debit Card
+09/22/24,Sunday,1646.17,Groceries,Farmer's Market,Discover Credit Card
+09/22/24,Sunday,1245.41,Entertainment,Concert,American Express Credit Card
+09/24/24,Tuesday,480.33,Merchandise,Electronics,M&T Debit Card
+09/25/24,Wednesday,1550.37,Merchandise,Makeup/Skin Care,Discover Credit Card
+09/25/24,Wednesday,-1553.83,Travel,Car Rental,M&T Debit Card
+09/27/24,Friday,1826.84,Entertainment,Concert,Discover Credit Card
+09/27/24,Friday,2747.68,Wire Transfer,Savings Transfer,American Express Credit Card
+09/27/24,Friday,1311.4,Food,Fast Food,Chase Debit Card
+09/28/24,Saturday,739.71,Groceries,Farmer's Market,American Express Credit Card
+09/29/24,Sunday,3063.5,Entertainment,Movies,M&T Debit Card
+09/30/24,Monday,962.08,Merchandise,Makeup/Skin Care,American Express Credit Card
+09/30/24,Monday,3128.07,Food,Coffee Shop,Discover Credit Card
+10/01/24,Tuesday,2550.98,Pharmacy,Prescriptions,Discover Credit Card
+10/04/24,Friday,2901.75,Bills,Internet,M&T Debit Card
+10/05/24,Saturday,907.71,Wire Transfer,Loan Payment,M&T Debit Card
+10/05/24,Saturday,606.98,Food,Delivery,M&T Debit Card
+10/06/24,Sunday,-1908.72,Merchandise,Amazon,Discover Credit Card
+10/06/24,Sunday,-697.38,Pharmacy,Health Products,M&T Debit Card
+10/07/24,Monday,-666.26,Entertainment,Streaming Services,Discover Credit Card
+10/08/24,Tuesday,0.36,Groceries,Supermarket,American Express Credit Card
+10/10/24,Thursday,3606.16,Pharmacy,Prescriptions,Chase Debit Card
+10/11/24,Friday,288.06,Pharmacy,Health Products,M&T Debit Card
+10/11/24,Friday,2947.65,Merchandise,Amazon,American Express Credit Card
+10/11/24,Friday,4679.01,Travel,Gas,M&T Debit Card
+10/13/24,Sunday,4400.64,Bills,Water,Discover Credit Card
+10/13/24,Sunday,1978.18,Wire Transfer,Tuition,American Express Credit Card
+10/14/24,Monday,-1961.71,Food,Delivery,American Express Credit Card
+10/14/24,Monday,2147.29,Entertainment,Movies,Discover Credit Card
+10/14/24,Monday,3219.09,Merchandise,Makeup/Skin Care,M&T Debit Card
+10/14/24,Monday,3082.1,Food,Coffee Shop,Chase Debit Card
+10/14/24,Monday,-1507.49,Pharmacy,Prescriptions,Discover Credit Card
+10/15/24,Tuesday,-1770.52,Merchandise,Clothes,M&T Debit Card
+10/15/24,Tuesday,-769.26,Bills,Internet,Chase Debit Card
+10/15/24,Tuesday,4956.39,Wire Transfer,Salary,American Express Credit Card
+10/15/24,Tuesday,502.93,Travel,Gas,Chase Debit Card
+10/16/24,Wednesday,870.03,Food,Fast Food,American Express Credit Card
+10/16/24,Wednesday,3171.31,Entertainment,Streaming Services,Discover Credit Card
+10/17/24,Thursday,1262.18,Wire Transfer,Tuition,M&T Debit Card
+10/17/24,Thursday,4607.97,Merchandise,Amazon,M&T Debit Card
+10/18/24,Friday,-376.55,Pharmacy,Prescriptions,Chase Debit Card
+10/19/24,Saturday,2347.75,Merchandise,Electronics,Chase Debit Card
+10/20/24,Sunday,2740.55,Entertainment,Games,Discover Credit Card
+10/20/24,Sunday,1780.08,Entertainment,Movies,American Express Credit Card
+10/21/24,Monday,1870.01,Bills,Internet,M&T Debit Card
+10/21/24,Monday,-389.63,Food,Restaurant,Discover Credit Card
+10/22/24,Tuesday,3224.26,Pharmacy,Health Products,American Express Credit Card
+10/22/24,Tuesday,4853.42,Groceries,Farmer's Market,Chase Debit Card
+10/25/24,Friday,1437.01,Travel,Car Rental,American Express Credit Card
+10/25/24,Friday,2478.76,Travel,Car Rental,Discover Credit Card
+10/27/24,Sunday,-326.15,Food,Fast Food,American Express Credit Card
+10/27/24,Sunday,1431.78,Bills,Rent,M&T Debit Card
+10/27/24,Sunday,658.28,Travel,Hotel,Chase Debit Card
+10/28/24,Monday,737.13,Food,Fast Food,Chase Debit Card
+10/29/24,Tuesday,-1223.52,Wire Transfer,Loan Payment,Chase Debit Card
+10/30/24,Wednesday,1701.04,Bills,Electricity,M&T Debit Card
+10/30/24,Wednesday,4527.49,Groceries,Farmer's Market,American Express Credit Card
+10/31/24,Thursday,-139.02,Merchandise,Makeup/Skin Care,Chase Debit Card
+10/31/24,Thursday,-1213.89,Bills,Electricity,American Express Credit Card
+10/31/24,Thursday,871.6,Entertainment,Movies,M&T Debit Card
+10/31/24,Thursday,4143.09,Wire Transfer,Tuition,Discover Credit Card
+11/01/24,Friday,391.9,Merchandise,Amazon,American Express Credit Card
+11/01/24,Friday,-1882.76,Pharmacy,Medicine,Discover Credit Card
+11/02/24,Saturday,4621.52,Bills,Rent,Chase Debit Card
+11/03/24,Sunday,-1083.73,Pharmacy,Prescriptions,Discover Credit Card
+11/03/24,Sunday,29.06,Travel,Car Rental,M&T Debit Card
+11/03/24,Sunday,-216.6,Travel,Car Rental,American Express Credit Card
+11/04/24,Monday,934.22,Bills,Water,American Express Credit Card
+11/05/24,Tuesday,4859.53,Bills,Rent,Chase Debit Card
+11/05/24,Tuesday,-1029.92,Wire Transfer,Savings Transfer,American Express Credit Card
+11/05/24,Tuesday,-151.92,Bills,Internet,American Express Credit Card
+11/06/24,Wednesday,2233.35,Pharmacy,Medicine,American Express Credit Card
+11/06/24,Wednesday,-427.14,Wire Transfer,Savings Transfer,Discover Credit Card
+11/08/24,Friday,2295.16,Entertainment,Concert,M&T Debit Card
+11/08/24,Friday,847.0,Pharmacy,Health Products,Chase Debit Card
+11/09/24,Saturday,1117.9,Entertainment,Streaming Services,American Express Credit Card
+11/09/24,Saturday,-371.11,Food,Coffee Shop,American Express Credit Card
+11/09/24,Saturday,2884.2,Food,Coffee Shop,American Express Credit Card
+11/10/24,Sunday,1031.18,Wire Transfer,Savings Transfer,Discover Credit Card
+11/10/24,Sunday,-16.83,Food,Delivery,M&T Debit Card
+11/11/24,Monday,-1554.5,Merchandise,Amazon,American Express Credit Card
+11/13/24,Wednesday,1804.86,Travel,Gas,Discover Credit Card
+11/13/24,Wednesday,476.64,Merchandise,Amazon,Chase Debit Card
+11/13/24,Wednesday,2790.21,Merchandise,Makeup/Skin Care,Chase Debit Card
+11/14/24,Thursday,3083.41,Food,Coffee Shop,Discover Credit Card
+11/14/24,Thursday,3082.48,Merchandise,Amazon,M&T Debit Card
+11/15/24,Friday,-1289.24,Food,Coffee Shop,Chase Debit Card
+11/15/24,Friday,3401.07,Merchandise,Electronics,M&T Debit Card
+11/16/24,Saturday,4014.47,Travel,Flight,M&T Debit Card
+11/17/24,Sunday,-339.73,Food,Fast Food,American Express Credit Card
+11/17/24,Sunday,1323.04,Entertainment,Concert,M&T Debit Card
+11/17/24,Sunday,3732.03,Entertainment,Movies,American Express Credit Card
+11/17/24,Sunday,-716.06,Groceries,Online Grocery,American Express Credit Card
+11/17/24,Sunday,-492.68,Travel,Hotel,Chase Debit Card
+11/18/24,Monday,-989.46,Travel,Car Rental,M&T Debit Card
+11/20/24,Wednesday,-1203.83,Travel,Gas,Chase Debit Card
+11/20/24,Wednesday,4711.46,Bills,Water,American Express Credit Card
+11/22/24,Friday,646.37,Bills,Electricity,M&T Debit Card
+11/22/24,Friday,-69.25,Merchandise,Amazon,Chase Debit Card
+11/23/24,Saturday,4330.77,Travel,Car Rental,M&T Debit Card
+11/23/24,Saturday,-34.33,Pharmacy,Medicine,M&T Debit Card
+11/23/24,Saturday,1121.0,Food,Delivery,Discover Credit Card
+11/24/24,Sunday,2043.63,Wire Transfer,Savings Transfer,Chase Debit Card
+11/25/24,Monday,687.95,Travel,Car Rental,American Express Credit Card
+11/26/24,Tuesday,688.89,Pharmacy,Medicine,American Express Credit Card
+11/27/24,Wednesday,4589.87,Wire Transfer,Loan Payment,Discover Credit Card
+11/29/24,Friday,-111.46,Wire Transfer,Loan Payment,M&T Debit Card
+11/29/24,Friday,1910.48,Entertainment,Streaming Services,American Express Credit Card
+11/30/24,Saturday,313.98,Food,Coffee Shop,Chase Debit Card
+12/02/24,Monday,3269.35,Entertainment,Streaming Services,Discover Credit Card
+12/02/24,Monday,818.89,Travel,Gas,American Express Credit Card
+12/02/24,Monday,-130.32,Pharmacy,Medicine,Chase Debit Card
+12/03/24,Tuesday,-891.89,Pharmacy,Health Products,Chase Debit Card
+12/03/24,Tuesday,4889.52,Food,Fast Food,American Express Credit Card
+12/04/24,Wednesday,-1311.49,Merchandise,Clothes,Discover Credit Card
+12/04/24,Wednesday,2681.46,Merchandise,Makeup/Skin Care,Chase Debit Card
+12/04/24,Wednesday,2804.37,Groceries,Online Grocery,Discover Credit Card
+12/04/24,Wednesday,914.32,Travel,Gas,M&T Debit Card
+12/06/24,Friday,1160.32,Groceries,Supermarket,M&T Debit Card
+12/06/24,Friday,4547.46,Food,Coffee Shop,Discover Credit Card
+12/07/24,Saturday,2087.4,Wire Transfer,Loan Payment,M&T Debit Card
+12/07/24,Saturday,2134.59,Food,Coffee Shop,American Express Credit Card
+12/07/24,Saturday,4925.66,Pharmacy,Health Products,American Express Credit Card
+12/07/24,Saturday,643.95,Groceries,Farmer's Market,Chase Debit Card
+12/08/24,Sunday,903.87,Food,Coffee Shop,Chase Debit Card
+12/08/24,Sunday,3510.12,Bills,Internet,American Express Credit Card
+12/09/24,Monday,1841.26,Groceries,Supermarket,American Express Credit Card
+12/09/24,Monday,925.13,Merchandise,Makeup/Skin Care,M&T Debit Card
+12/09/24,Monday,4148.45,Bills,Rent,Chase Debit Card
+12/09/24,Monday,-346.07,Wire Transfer,Loan Payment,Discover Credit Card
+12/10/24,Tuesday,4078.79,Groceries,Supermarket,American Express Credit Card
+12/10/24,Tuesday,1268.74,Entertainment,Concert,Chase Debit Card
+12/10/24,Tuesday,2945.79,Bills,Electricity,M&T Debit Card
+12/11/24,Wednesday,342.92,Groceries,Farmer's Market,Discover Credit Card
+12/11/24,Wednesday,1197.26,Pharmacy,Health Products,Chase Debit Card
+12/12/24,Thursday,-340.86,Groceries,Farmer's Market,Discover Credit Card
+12/13/24,Friday,1538.94,Bills,Rent,Chase Debit Card
+12/13/24,Friday,3280.43,Merchandise,Electronics,Chase Debit Card
+12/13/24,Friday,-1744.93,Travel,Car Rental,American Express Credit Card
+12/14/24,Saturday,-1445.43,Pharmacy,Medicine,Chase Debit Card
+12/15/24,Sunday,1585.15,Bills,Water,Chase Debit Card
+12/15/24,Sunday,1149.26,Travel,Hotel,Chase Debit Card
+12/15/24,Sunday,2293.37,Travel,Gas,Chase Debit Card
+12/15/24,Sunday,2364.64,Food,Delivery,Discover Credit Card
+12/17/24,Tuesday,-327.26,Wire Transfer,Tuition,Discover Credit Card
+12/17/24,Tuesday,4171.55,Groceries,Online Grocery,M&T Debit Card
+12/18/24,Wednesday,464.27,Food,Restaurant,M&T Debit Card
+12/19/24,Thursday,2843.28,Travel,Gas,Chase Debit Card
+12/19/24,Thursday,1195.25,Wire Transfer,Salary,M&T Debit Card
+12/19/24,Thursday,2486.56,Entertainment,Movies,American Express Credit Card
+12/20/24,Friday,2945.7,Food,Restaurant,M&T Debit Card
+12/20/24,Friday,4900.83,Bills,Electricity,American Express Credit Card
+12/21/24,Saturday,339.46,Food,Fast Food,Discover Credit Card
+12/21/24,Saturday,2833.71,Groceries,Online Grocery,Discover Credit Card
+12/22/24,Sunday,2321.53,Groceries,Farmer's Market,Chase Debit Card
+12/22/24,Sunday,-847.25,Pharmacy,Prescriptions,M&T Debit Card
+12/23/24,Monday,1259.0,Pharmacy,Medicine,American Express Credit Card
+12/24/24,Tuesday,4597.51,Groceries,Farmer's Market,American Express Credit Card
+12/25/24,Wednesday,761.22,Travel,Gas,M&T Debit Card
+12/25/24,Wednesday,1217.04,Travel,Flight,Chase Debit Card
+12/26/24,Thursday,-756.49,Groceries,Farmer's Market,M&T Debit Card
+12/26/24,Thursday,-1604.23,Groceries,Farmer's Market,Discover Credit Card
+12/29/24,Sunday,1453.9,Wire Transfer,Savings Transfer,Chase Debit Card
+12/29/24,Sunday,-40.86,Travel,Gas,American Express Credit Card
+12/30/24,Monday,3901.57,Merchandise,Clothes,M&T Debit Card
+12/30/24,Monday,1896.62,Travel,Hotel,Discover Credit Card
+12/30/24,Monday,4661.53,Groceries,Supermarket,Chase Debit Card
+12/31/24,Tuesday,289.14,Bills,Electricity,Chase Debit Card
+12/31/24,Tuesday,-640.69,Merchandise,Electronics,M&T Debit Card
+12/31/24,Tuesday,2779.39,Travel,Car Rental,Discover Credit Card
+12/31/24,Tuesday,-313.04,Merchandise,Clothes,M&T Debit Card
+12/31/24,Tuesday,4302.44,Groceries,Supermarket,M&T Debit Card
+01/01/25,Wednesday,-636.27,Bills,Rent,M&T Debit Card
+01/01/25,Wednesday,323.25,Food,Delivery,American Express Credit Card
+01/02/25,Thursday,3620.44,Pharmacy,Prescriptions,American Express Credit Card
+01/02/25,Thursday,-572.29,Groceries,Farmer's Market,M&T Debit Card
+01/03/25,Friday,-344.53,Travel,Car Rental,M&T Debit Card
+01/04/25,Saturday,-746.28,Pharmacy,Medicine,M&T Debit Card
+01/04/25,Saturday,3881.33,Merchandise,Amazon,American Express Credit Card
+01/04/25,Saturday,2653.41,Entertainment,Concert,Chase Debit Card
+01/05/25,Sunday,3690.16,Food,Coffee Shop,Discover Credit Card
+01/05/25,Sunday,3478.85,Wire Transfer,Savings Transfer,American Express Credit Card
+01/05/25,Sunday,2794.21,Entertainment,Movies,Discover Credit Card
+01/07/25,Tuesday,-1367.92,Food,Restaurant,M&T Debit Card
+01/07/25,Tuesday,1387.64,Wire Transfer,Savings Transfer,American Express Credit Card
+01/07/25,Tuesday,488.83,Entertainment,Streaming Services,M&T Debit Card
+01/07/25,Tuesday,-328.03,Entertainment,Movies,Chase Debit Card
+01/08/25,Wednesday,1726.47,Groceries,Supermarket,Chase Debit Card
+01/09/25,Thursday,350.39,Wire Transfer,Tuition,Chase Debit Card
+01/10/25,Friday,962.39,Bills,Electricity,M&T Debit Card
+01/11/25,Saturday,-758.22,Food,Delivery,Discover Credit Card
+01/12/25,Sunday,-980.9,Bills,Water,Chase Debit Card
+01/12/25,Sunday,4619.48,Travel,Hotel,Chase Debit Card
+01/12/25,Sunday,-1650.15,Bills,Rent,Chase Debit Card
+01/13/25,Monday,3300.74,Travel,Flight,Chase Debit Card
+01/14/25,Tuesday,3603.16,Wire Transfer,Savings Transfer,Chase Debit Card
+01/14/25,Tuesday,3046.1,Wire Transfer,Savings Transfer,M&T Debit Card
+01/15/25,Wednesday,1550.09,Bills,Electricity,American Express Credit Card
+01/16/25,Thursday,4040.42,Entertainment,Concert,M&T Debit Card
+01/16/25,Thursday,775.89,Travel,Gas,American Express Credit Card
+01/17/25,Friday,2000.16,Entertainment,Games,Discover Credit Card
+01/17/25,Friday,4198.88,Groceries,Farmer's Market,American Express Credit Card
+01/18/25,Saturday,526.62,Merchandise,Electronics,Chase Debit Card
+01/18/25,Saturday,-1843.46,Pharmacy,Health Products,M&T Debit Card
+01/19/25,Sunday,-481.84,Food,Coffee Shop,Discover Credit Card
+01/20/25,Monday,-701.3,Pharmacy,Prescriptions,Chase Debit Card
+01/20/25,Monday,2905.62,Travel,Gas,Chase Debit Card
+01/20/25,Monday,263.06,Bills,Electricity,Chase Debit Card
+01/21/25,Tuesday,2739.48,Food,Delivery,Chase Debit Card
+01/21/25,Tuesday,3838.48,Entertainment,Movies,Discover Credit Card
+01/22/25,Wednesday,883.78,Pharmacy,Health Products,Discover Credit Card
+01/22/25,Wednesday,1424.17,Wire Transfer,Salary,Chase Debit Card
+01/23/25,Thursday,1675.75,Travel,Flight,M&T Debit Card
+01/25/25,Saturday,268.69,Merchandise,Electronics,M&T Debit Card
+01/25/25,Saturday,809.21,Merchandise,Electronics,M&T Debit Card
+01/25/25,Saturday,-1061.48,Food,Restaurant,Discover Credit Card
+01/25/25,Saturday,574.58,Pharmacy,Prescriptions,Discover Credit Card
+01/27/25,Monday,1431.96,Food,Restaurant,American Express Credit Card
+01/29/25,Wednesday,3919.2,Bills,Electricity,Chase Debit Card
+01/29/25,Wednesday,3938.45,Travel,Gas,Discover Credit Card
+01/29/25,Wednesday,4469.32,Merchandise,Electronics,M&T Debit Card
+01/30/25,Thursday,627.68,Pharmacy,Prescriptions,American Express Credit Card
+01/30/25,Thursday,-1851.22,Travel,Hotel,Discover Credit Card
+01/30/25,Thursday,3464.95,Wire Transfer,Loan Payment,Discover Credit Card
+01/31/25,Friday,-1800.51,Entertainment,Concert,Discover Credit Card
+01/31/25,Friday,4906.85,Travel,Flight,American Express Credit Card
+02/01/25,Saturday,3677.23,Travel,Flight,American Express Credit Card
+02/01/25,Saturday,4241.83,Travel,Hotel,M&T Debit Card
+02/01/25,Saturday,2141.93,Wire Transfer,Savings Transfer,American Express Credit Card
+02/02/25,Sunday,4035.4,Wire Transfer,Loan Payment,American Express Credit Card
+02/03/25,Monday,4439.75,Pharmacy,Medicine,American Express Credit Card
+02/03/25,Monday,177.66,Pharmacy,Medicine,M&T Debit Card
+02/03/25,Monday,4998.44,Entertainment,Concert,Chase Debit Card
+02/04/25,Tuesday,-1760.2,Merchandise,Amazon,American Express Credit Card
+02/04/25,Tuesday,3805.38,Pharmacy,Prescriptions,M&T Debit Card
+02/04/25,Tuesday,3088.85,Wire Transfer,Tuition,M&T Debit Card
+02/05/25,Wednesday,1619.95,Wire Transfer,Salary,Chase Debit Card
+02/05/25,Wednesday,2742.23,Merchandise,Makeup/Skin Care,Chase Debit Card
+02/06/25,Thursday,-1622.78,Travel,Flight,American Express Credit Card
+02/06/25,Thursday,-317.7,Travel,Hotel,Discover Credit Card
+02/06/25,Thursday,395.53,Pharmacy,Medicine,Chase Debit Card
+02/07/25,Friday,1136.87,Wire Transfer,Savings Transfer,Chase Debit Card
+02/08/25,Saturday,4768.26,Travel,Flight,Chase Debit Card
+02/08/25,Saturday,-1289.63,Groceries,Online Grocery,Discover Credit Card
+02/09/25,Sunday,1656.46,Wire Transfer,Tuition,Discover Credit Card
+02/09/25,Sunday,-1197.92,Wire Transfer,Savings Transfer,American Express Credit Card
+02/10/25,Monday,757.39,Wire Transfer,Tuition,M&T Debit Card
+02/10/25,Monday,3513.79,Travel,Flight,Discover Credit Card
+02/10/25,Monday,4415.63,Travel,Car Rental,American Express Credit Card
+02/10/25,Monday,328.2,Merchandise,Electronics,Discover Credit Card
+02/11/25,Tuesday,2712.34,Food,Restaurant,Chase Debit Card
+02/11/25,Tuesday,4661.08,Wire Transfer,Savings Transfer,Discover Credit Card
+02/11/25,Tuesday,4551.13,Wire Transfer,Loan Payment,M&T Debit Card
+02/11/25,Tuesday,4194.94,Travel,Car Rental,M&T Debit Card
+02/11/25,Tuesday,2708.6,Wire Transfer,Loan Payment,M&T Debit Card
+02/12/25,Wednesday,1658.42,Groceries,Supermarket,M&T Debit Card
+02/13/25,Thursday,-1964.08,Bills,Electricity,American Express Credit Card
+02/13/25,Thursday,3227.0,Merchandise,Amazon,M&T Debit Card
+02/14/25,Friday,801.09,Pharmacy,Prescriptions,Discover Credit Card
+02/14/25,Friday,833.67,Pharmacy,Prescriptions,Chase Debit Card
+02/14/25,Friday,2498.16,Travel,Car Rental,M&T Debit Card
+02/14/25,Friday,1660.41,Merchandise,Clothes,American Express Credit Card
+02/14/25,Friday,641.65,Pharmacy,Health Products,Chase Debit Card
+02/15/25,Saturday,-1067.97,Merchandise,Makeup/Skin Care,Chase Debit Card
+02/15/25,Saturday,3555.25,Travel,Flight,American Express Credit Card
+02/15/25,Saturday,4673.57,Food,Restaurant,American Express Credit Card
+02/16/25,Sunday,1170.49,Food,Restaurant,M&T Debit Card
+02/16/25,Sunday,-943.47,Bills,Water,M&T Debit Card
+02/17/25,Monday,-23.92,Merchandise,Amazon,Chase Debit Card
+02/17/25,Monday,-1422.07,Wire Transfer,Loan Payment,Discover Credit Card
+02/17/25,Monday,1293.36,Food,Restaurant,Discover Credit Card
+02/18/25,Tuesday,-1075.79,Bills,Water,American Express Credit Card
+02/19/25,Wednesday,4216.14,Pharmacy,Medicine,M&T Debit Card
+02/19/25,Wednesday,1678.16,Food,Delivery,Chase Debit Card
+02/20/25,Thursday,594.69,Bills,Water,Discover Credit Card
+02/21/25,Friday,2718.39,Travel,Hotel,Chase Debit Card
+02/21/25,Friday,-575.96,Pharmacy,Prescriptions,Discover Credit Card
+02/21/25,Friday,-332.53,Travel,Car Rental,Discover Credit Card
+02/21/25,Friday,3480.92,Wire Transfer,Tuition,Discover Credit Card
+02/21/25,Friday,-484.59,Entertainment,Games,Chase Debit Card
+02/22/25,Saturday,-1120.86,Food,Delivery,Discover Credit Card
+02/22/25,Saturday,3936.78,Travel,Gas,American Express Credit Card
+02/22/25,Saturday,3369.8,Merchandise,Clothes,Discover Credit Card
+02/23/25,Sunday,4422.43,Groceries,Online Grocery,M&T Debit Card
+02/26/25,Wednesday,594.62,Wire Transfer,Savings Transfer,Discover Credit Card
+02/26/25,Wednesday,3894.66,Food,Coffee Shop,Chase Debit Card
+02/27/25,Thursday,1626.32,Bills,Electricity,Chase Debit Card
+02/27/25,Thursday,-1203.03,Food,Fast Food,American Express Credit Card
+02/27/25,Thursday,-1788.6,Wire Transfer,Salary,M&T Debit Card
+02/28/25,Friday,685.14,Food,Fast Food,American Express Credit Card
+03/01/25,Saturday,-1721.11,Wire Transfer,Salary,Chase Debit Card
+03/01/25,Saturday,4698.85,Merchandise,Clothes,Chase Debit Card
+03/01/25,Saturday,2562.85,Wire Transfer,Salary,M&T Debit Card
+03/01/25,Saturday,3531.87,Wire Transfer,Salary,M&T Debit Card
+03/01/25,Saturday,1337.35,Wire Transfer,Savings Transfer,Discover Credit Card
+03/01/25,Saturday,1690.01,Bills,Internet,M&T Debit Card
+03/03/25,Monday,2461.35,Groceries,Supermarket,M&T Debit Card
+03/03/25,Monday,-1888.74,Pharmacy,Prescriptions,Chase Debit Card
+03/04/25,Tuesday,4741.35,Merchandise,Makeup/Skin Care,Discover Credit Card
+03/06/25,Thursday,4904.42,Entertainment,Games,American Express Credit Card
+03/06/25,Thursday,-816.68,Travel,Flight,M&T Debit Card
+03/06/25,Thursday,-1667.79,Groceries,Online Grocery,American Express Credit Card
+03/07/25,Friday,-1563.0,Food,Coffee Shop,Chase Debit Card
+03/08/25,Saturday,-148.58,Bills,Electricity,M&T Debit Card
+03/08/25,Saturday,-28.15,Travel,Hotel,Chase Debit Card
+03/08/25,Saturday,-941.81,Entertainment,Streaming Services,M&T Debit Card
+03/09/25,Sunday,3698.52,Groceries,Online Grocery,Discover Credit Card
+03/09/25,Sunday,1355.49,Pharmacy,Prescriptions,American Express Credit Card
+03/09/25,Sunday,4348.54,Bills,Rent,Discover Credit Card
+03/10/25,Monday,988.43,Pharmacy,Prescriptions,American Express Credit Card
+03/10/25,Monday,3032.06,Groceries,Supermarket,American Express Credit Card
+03/10/25,Monday,4113.71,Food,Fast Food,American Express Credit Card
+03/11/25,Tuesday,-1040.44,Travel,Flight,Discover Credit Card
+03/12/25,Wednesday,4245.33,Entertainment,Games,American Express Credit Card
+03/13/25,Thursday,2570.34,Food,Delivery,Discover Credit Card
+03/14/25,Friday,-1166.51,Pharmacy,Prescriptions,American Express Credit Card
+03/14/25,Friday,3643.09,Bills,Electricity,Chase Debit Card
+03/15/25,Saturday,3936.21,Groceries,Online Grocery,American Express Credit Card
+03/15/25,Saturday,3968.7,Travel,Car Rental,Chase Debit Card
+03/15/25,Saturday,-80.81,Wire Transfer,Salary,M&T Debit Card
+03/18/25,Tuesday,4644.41,Wire Transfer,Loan Payment,Discover Credit Card
+03/21/25,Friday,-1343.88,Entertainment,Streaming Services,American Express Credit Card
+03/21/25,Friday,-48.14,Wire Transfer,Tuition,M&T Debit Card
+03/23/25,Sunday,2313.94,Entertainment,Games,Discover Credit Card
+03/24/25,Monday,2260.18,Wire Transfer,Loan Payment,Chase Debit Card
+03/24/25,Monday,-28.63,Pharmacy,Health Products,M&T Debit Card
+03/25/25,Tuesday,1573.36,Pharmacy,Prescriptions,Chase Debit Card
+03/25/25,Tuesday,2722.02,Merchandise,Electronics,Chase Debit Card
+03/26/25,Wednesday,-1954.8,Travel,Flight,Chase Debit Card
+03/26/25,Wednesday,1299.45,Wire Transfer,Loan Payment,M&T Debit Card
+03/27/25,Thursday,-18.18,Wire Transfer,Savings Transfer,American Express Credit Card
+03/27/25,Thursday,4767.71,Food,Delivery,Discover Credit Card
+03/28/25,Friday,1923.59,Wire Transfer,Loan Payment,American Express Credit Card
+03/29/25,Saturday,4803.22,Bills,Electricity,American Express Credit Card
+03/29/25,Saturday,3788.64,Merchandise,Clothes,Discover Credit Card
+03/30/25,Sunday,3437.77,Wire Transfer,Tuition,Discover Credit Card
+03/30/25,Sunday,2979.69,Travel,Gas,Discover Credit Card
+03/31/25,Monday,3803.42,Travel,Hotel,American Express Credit Card
+03/31/25,Monday,-1508.85,Bills,Water,American Express Credit Card
+04/02/25,Wednesday,377.87,Groceries,Farmer's Market,American Express Credit Card
+04/03/25,Thursday,-1655.69,Wire Transfer,Savings Transfer,M&T Debit Card
+04/04/25,Friday,4147.15,Travel,Gas,American Express Credit Card
+04/04/25,Friday,-1516.71,Pharmacy,Prescriptions,Discover Credit Card
+04/04/25,Friday,532.7,Food,Restaurant,Chase Debit Card
+04/05/25,Saturday,1322.25,Pharmacy,Prescriptions,Chase Debit Card
+04/05/25,Saturday,2514.56,Wire Transfer,Tuition,Chase Debit Card
+04/05/25,Saturday,-598.88,Merchandise,Clothes,M&T Debit Card
+04/05/25,Saturday,-792.75,Travel,Gas,Chase Debit Card
+04/05/25,Saturday,675.5,Bills,Internet,Chase Debit Card
+04/06/25,Sunday,-1763.71,Groceries,Supermarket,Discover Credit Card
+04/06/25,Sunday,4201.81,Merchandise,Clothes,Discover Credit Card
+04/06/25,Sunday,4768.54,Food,Fast Food,American Express Credit Card
+04/07/25,Monday,2115.21,Merchandise,Clothes,Chase Debit Card
+04/08/25,Tuesday,3642.97,Wire Transfer,Savings Transfer,Discover Credit Card
+04/09/25,Wednesday,1596.06,Entertainment,Concert,Chase Debit Card
+04/10/25,Thursday,3436.86,Wire Transfer,Savings Transfer,Chase Debit Card
+04/11/25,Friday,3434.47,Travel,Gas,M&T Debit Card
+04/11/25,Friday,-1001.87,Entertainment,Games,American Express Credit Card
+04/11/25,Friday,2617.59,Groceries,Farmer's Market,Chase Debit Card
+04/11/25,Friday,-78.56,Food,Coffee Shop,Chase Debit Card
+04/12/25,Saturday,264.06,Food,Fast Food,American Express Credit Card
+04/14/25,Monday,-527.67,Wire Transfer,Savings Transfer,M&T Debit Card
+04/14/25,Monday,-1943.84,Bills,Rent,American Express Credit Card
+04/14/25,Monday,3693.87,Travel,Hotel,Chase Debit Card
+04/16/25,Wednesday,-1920.93,Food,Delivery,M&T Debit Card
+04/17/25,Thursday,-552.0,Bills,Water,M&T Debit Card
+04/18/25,Friday,-577.58,Travel,Flight,Chase Debit Card
+04/18/25,Friday,778.06,Entertainment,Movies,M&T Debit Card
+04/19/25,Saturday,148.85,Pharmacy,Medicine,American Express Credit Card
+04/19/25,Saturday,-1465.9,Travel,Hotel,M&T Debit Card
+04/22/25,Tuesday,4300.02,Groceries,Online Grocery,Discover Credit Card
+04/22/25,Tuesday,3420.49,Wire Transfer,Savings Transfer,American Express Credit Card
+04/23/25,Wednesday,334.96,Wire Transfer,Salary,Chase Debit Card
+04/23/25,Wednesday,-1940.56,Bills,Water,American Express Credit Card

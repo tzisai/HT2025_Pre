@@ -1,5 +1,5 @@
-import React from "react";
-
+import React, { useState } from "react";
+import { FaEye, FaEyeSlash } from "react-icons/fa";
 interface PasswordFieldProps {
   name: string;
   label: string;
@@ -20,21 +20,37 @@ const PasswordField: React.FC<PasswordFieldProps> = ({
   onBlur,
   maxLength,
   minLength,
-}) => (
-  <div className="mb-3">
-    <label className="form-label">{label}</label>
-    <input
-      type="password"
-      name={name}
-      value={value}
-      onChange={onChange}
-      onBlur={onBlur}
-      className={`form-control ${error ? "is-invalid" : ""}`}
-      maxLength={maxLength}
-      minLength={minLength}
-    />
-    {error && <div className="invalid-feedback">{error}</div>}
-  </div>
-);
+}) => {
+  const [showPassword, setShowPassword] = useState(false);
+  const togglePasswordVisibility = () => {
+    setShowPassword((prev) => !prev);
+  };
+  return (
+    <div className="mb-3">
+      <label className="form-label">{label}</label>
+      <div className="input-group">
+        <input
+          type={showPassword ? "text" : "password"}
+          name={name}
+          value={value}
+          onChange={onChange}
+          onBlur={onBlur}
+          className={`form-control ${error ? "is-invalid" : ""}`}
+          maxLength={maxLength}
+          minLength={minLength}
+        />
+        <button
+          type="button"
+          className="btn btn-outline-secondary"
+          onClick={togglePasswordVisibility}
+          tabIndex={-1}
+        >
+          {showPassword ? <FaEyeSlash /> : <FaEye />}
+        </button>
+      </div>
+      {error && <div className="invalid-feedback">{error}</div>}
+    </div>
+  );
+};
 
 export default PasswordField;
