@@ -10,7 +10,7 @@ function IntroductionToFinance() {
   const renderContent = () => {
     switch (selected) {
       case "Seccion 1":
-        return <p>Contenido de la Sección 1</p>;
+        return <div></div>;
       case "Seccion 2":
         return <p>Contenido de la Sección 2</p>;
       case "Seccion 3":
@@ -25,23 +25,45 @@ function IntroductionToFinance() {
   return (
     <>
       <NavBar />
-      <div className="d-flex" style={{ minHeight: "100vh" }}>
-        <div
-          className="sticky-top bg-light"
-          style={{ width: "280px", height: "100vh" }}
-        >
-          <SideBar
-            title="Introduction to Finance"
-            selected={selected}
-            onSelect={setSelected}
-            options={options}
-            imageUrl={IntroFin}
-          />
-        </div>
 
-        <div className="flex-grow-1 p-4 overflow-auto">
-          <h2>{selected}</h2>
-          {renderContent()}
+      {/* Sidebar para móviles (encabezado) */}
+      <div className="d-md-none">
+        <SideBar
+          title="Introduction to Finance"
+          selected={selected}
+          onSelect={setSelected}
+          options={options}
+          imageUrl={IntroFin}
+        />
+      </div>
+
+      {/* Layout de contenido para pantallas grandes */}
+      <div className="container-fluid">
+        <div
+          className="d-grid"
+          style={{
+            gridTemplateColumns: "280px 1fr",
+            minHeight: "100vh",
+          }}
+        >
+          {/* Sidebar en desktop */}
+          <div className="d-none d-md-block bg-light border-end">
+            <SideBar
+              title="Introduction to Finance"
+              selected={selected}
+              onSelect={setSelected}
+              options={options}
+              imageUrl={IntroFin}
+            />
+          </div>
+
+          {/* Contenido principal: envuelto en un div que se adapta */}
+          <div className="p-4">
+            <div>
+              <h2>{selected}</h2>
+              {renderContent()}
+            </div>
+          </div>
         </div>
       </div>
     </>

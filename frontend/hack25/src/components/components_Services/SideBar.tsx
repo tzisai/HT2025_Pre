@@ -12,7 +12,7 @@ interface SideBarProps {
 const SideBar: React.FC<SideBarProps> = ({
   title,
   options,
-  selected = options[0],
+  selected,
   onSelect,
   imageUrl,
 }) => {
@@ -20,8 +20,8 @@ const SideBar: React.FC<SideBarProps> = ({
 
   return (
     <>
-      {/* Botón para pantallas pequeñas */}
-      <div className="d-md-none d-flex align-items-center bg-light p-2 border-bottom justify-content-between">
+      {/* Título con botón hamburguesa para móviles */}
+      <div className="d-md-none d-flex align-items-center bg-light p-2 border-bottom justify-content-between sticky-top">
         <span className="fw-bold">{title}</span>
         <button
           className="btn btn-outline-secondary btn-sm"
@@ -33,10 +33,12 @@ const SideBar: React.FC<SideBarProps> = ({
 
       {/* Sidebar para pantallas grandes */}
       <div
-        className="d-flex flex-column flex-shrink-0 p-3 bg-grey border-end"
-        style={{ width: "280px", height: "100vh" }}
+        className="d-none d-md-flex flex-column flex-shrink-0 p-3 bg-grey border-end"
+        style={{ width: "280px", height: "100vh", position: "sticky", top: 0 }}
       >
-        <img src={imageUrl} className="sidebar-thumbnail mb-3" alt="..." />
+        {imageUrl && (
+          <img src={imageUrl} className="sidebar-thumbnail mb-3" alt="..." />
+        )}
         <h2 className="fs-5 fw-semibold text-center">{title}</h2>
         <hr />
         <div className="list-group list-group-flush">
@@ -53,9 +55,13 @@ const SideBar: React.FC<SideBarProps> = ({
           ))}
         </div>
       </div>
+
       {/* Offcanvas para móviles */}
       {isOpen && (
-        <div className="offcanvas-overlay" onClick={() => setIsOpen(false)}>
+        <div
+          className="offcanvas-overlay d-md-none"
+          onClick={() => setIsOpen(false)}
+        >
           <div
             className="offcanvas-sidebar bg-light p-3"
             onClick={(e) => e.stopPropagation()}
