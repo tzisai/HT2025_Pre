@@ -1,5 +1,5 @@
 import React from "react";
-import "./services.css";
+import "./Card.css";
 
 interface CardProps {
   title: string;
@@ -18,7 +18,10 @@ const Card: React.FC<CardProps> = ({
 }) => (
   <div className="col-lg-3 col-md-5 col-12 mb-4">
     <div className="card">
-      <img src={imageUrl} className="card-img-top" alt={title + " image"} />
+      <div style={{ background: "#fff", padding: "10px", borderRadius: "5px" }}>
+        <img src={imageUrl} className="card-img-top" alt={title + " image"} />
+      </div>
+
       <div className="card-body">
         <h5>
           <a className="card-title" href={titleLink}>

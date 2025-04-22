@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./services.css";
+import "./SideBar.css";
 
 interface SideBarProps {
   title: string;

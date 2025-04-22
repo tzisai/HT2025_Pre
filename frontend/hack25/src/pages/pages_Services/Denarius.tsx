@@ -9,7 +9,7 @@ function Denarius() {
     <>
       <NavBar />
       <h1> Courses </h1>
-      <div className="container">
+      <div className="container-cards">
         <div className="row">
           <Card
             title="Introduction to Finance"
