@@ -6,11 +6,29 @@ import { onAuthStateChanged } from "firebase/auth";
 import { auth } from "../firebase/firebaseApp"; // Ajusta la ruta si es necesario
 import "./NavBar.css"; 
 import logo from "../assets/sophos_web.svg"; // Ajustá la ruta según tu estructura
+import house from "../assets/house.svg"; // Ajustá la ruta según tu estructura
+
+export const useIsMobile = (breakpoint = 768) => {
+  const [isMobile, setIsMobile] = useState<boolean>(false);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth < breakpoint);
+    };
+
+    handleResize(); // Run on mount
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, [breakpoint]);
+
+  return isMobile;
+};
 
 function NavBar() {
   let navigate = useNavigate();
   const [isLoggedIn, setIsLoggedIn] = useState(false); // Estado de inicio de sesión
-
+  const isMobile = useIsMobile(); // 👈 úsalo aquí
+  
   useEffect(() => {
     const unsubscribe = onAuthStateChanged(auth, (user) => {
       setIsLoggedIn(!!user);
@@ -34,7 +52,10 @@ function NavBar() {
 
   return (
     <>
-      <nav className="navbar navbar-expand-lg navbar-aspect">
+      <nav
+  className={`navbar navbar-expand-lg navbar-aspect responsive-navbar
+    ${isMobile ? "fixed-bottom" : "fixed-top"} bg-white z-50`}
+    >
         <div className="container-fluid">
         <a className="navbar-brand d-flex align-items-center" href="/">
           <img
@@ -73,7 +94,11 @@ function NavBar() {
                   aria-current="page"
                   to="/"
                 >
+                 {isMobile ? (
+                  <img src={house} alt="Home" width={24} height={24} />
+                ) : (
                   <div className="text-bt-nav">Home</div>
+                )}
                 </NavLink>
               </li>
               <li className="nav-item text-bt-nav">
@@ -155,9 +180,9 @@ function NavBar() {
                   </div>
                 </>
               ) : (
-                <div className="dropdown">
+                <div className="dropdown" >
                   <button
-                    className="btn btn-outline-secondary rounded-circle p-2"
+                    className="btn btn-outline-secondary rounded-circle p-2 margin_lgin"
                     type="button"
                     data-bs-toggle="dropdown"
                     aria-expanded="false"
@@ -168,7 +193,7 @@ function NavBar() {
                   <ul className="dropdown-menu">
                     <li>
                       <button className="dropdown-item" onClick={handleLogout}>
-                        Cerrar sesión
+                        Cerrar sesión.
                       </button>
                     </li>
                   </ul>

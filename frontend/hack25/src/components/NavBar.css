@@ -1,9 +1,9 @@
 .navbar-aspect{
-    background-color: rgb(58, 51, 107);
-    
-    size: auto;
-    margin: 0px 0px 7px 0px;
-    background-image: linear-gradient(to right,rgb(58, 51, 107),rgb(25, 4, 53));
+  background-color: rgb(58, 51, 107);
+  background-image: linear-gradient(to right, rgb(58, 51, 107), rgb(25, 4, 53));
+  width: 100%;
+  z-index: 999;
+  position: relative; /* No la fijes por defecto */
 }
 
 .navbar-brand {
@@ -118,18 +118,34 @@
     transition: text-shadow 0.3s ease, color 0.3s ease;
 }
 
+
 /* Responsivo: centra todos los elementos en pantallas pequeñas */
 @media (max-width: 991px) {
-    .navbar-collapse {
+    
+  .navbar-aspect {
+    position: fixed;
+    bottom: 0;
+    top: auto;
+    left: 0;
+    right: 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+  }
+  
+      .navbar-collapse {
       text-align: center;
     }
   
     .navbar-nav {
       display: flex;
-      flex-direction: column;
+      flex-direction: row;
       align-items: center;
+      gap:10px;
     }
   
+    body {
+      padding-bottom: 70px; /* para que el contenido no quede debajo de la navbar */
+    }
+
     .nav-item,
     .boton-isa {
       margin-bottom: 0.2rem;
@@ -138,15 +154,36 @@
   
     .boton-isa {
       width: 130px;
-      padding: 0px 40px !important;
-      margin: 0px 0px 0px 25px;
-    
+      padding: 0px 35px !important;
+      margin: 0px 0px 0px 0px;
     }
   
     .dropdown-menu {
-      text-align: center;
+      align-self: left;
     }
 
+    .boton-container{
+      align-self: center;
+    }
+
+    .margin_lgin{
+      margin-left: 0px!important;
+    }
+    
+    ul.dropdown-menu.show {
+      position: absolute;
+      top: 100%;
+      left: 40%;
+      right: 40%;
+      z-index: 1;
+      display: block;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      background-color: #d4cfda;
+      border-radius: 0.5rem;
+      box-shadow: 0 0.5rem 1rem rgba(110, 77, 209, 0.15);
+    }
   }
 /* Responsivo: ajusta el tamaño de la fuente y el padding en pantallas pequeñas */  
 
@@ -176,4 +213,13 @@
 
 .logo-img:hover {
   filter: drop-shadow(0 0 2em #646cffaa);
+}
+
+
+.margin_lgin{
+  margin-left: 110px;
+}
+
+.inversion{
+  filter: invert();
 }

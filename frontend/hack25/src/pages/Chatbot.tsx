@@ -1,99 +1,128 @@
-import React, { useState, useRef, useEffect } from "react";
+import React, { useState } from "react";
 import NavBar from "../components/NavBar";
 import "./Chat_bot.css";
+import ChatWindow from "../components/ChatWindow";
+import ChatSidebar from "../components/ChatSidebar";
+
+
+// Dentro de tu archivo ChatBot.tsx o en un archivo de tipos aparte (e.g., types/chat.ts)
+
+interface Message {
+  sender: 'user' | 'bot';
+  text: string;
+}
+
+interface Conversation {
+  id: number;
+  title: string;
+  messages: Message[];
+}
+
+interface ChatSidebarProps {
+  conversations: Conversation[];
+  onSelectChat: (id: number) => void;
+  activeChatId: number;
+  onNewChat: () => void;
+  onDeleteChat: (id: number) => void;
+}
+
+interface ChatWindowProps {
+  conversation: Conversation | undefined | null; // Puede ser undefined o null si no hay chat activo
+  onSendMessage: (text: string) => void;
+}
+
+interface ChatBotState {
+  sidebarVisible: boolean;
+  conversations: Conversation[];
+  activeChatId: number;
+}
 
 export default function ChatBot() {
-  const [messages, setMessages] = useState([
-    { sender: "bot", text: "Welcome! Nova is here to help you 😊" },
+  const [sidebarVisible, setSidebarVisible] = useState<boolean>(true);
+  const toggleSidebar = (): void => setSidebarVisible(!sidebarVisible);
+
+  const [conversations, setConversations] = useState<Conversation[]>([
+    {
+      id: 1,
+      title: "New Chat",
+      messages: [{ sender: "bot", text: "Hi! How can I help you today?" }],
+    },
   ]);
-  const [input, setInput] = useState("");
-  const messagesEndRef = useRef<HTMLDivElement>(null);
 
-  const handleSend = () => {
-    if (!input.trim()) return;
+  const [activeChatId, setActiveChatId] = useState<number>(1);
 
-    setMessages((prev) => [...prev, { sender: "user", text: input }]);
-    setInput("");
-
-    // Simulación de respuesta
-    setTimeout(() => {
-      setMessages((prev) => [
-        ...prev,
-        { sender: "bot", text: "(Aqui va lo que escupa la IA :D)" },
-      ]);
-    }, 1000);
-  };
-
-  const handleKeyPress = (e: React.KeyboardEvent<HTMLTextAreaElement>) => {
-    if (e.key === "Enter" && !e.shiftKey) {
-      e.preventDefault();
-      handleSend();
+  const deleteConversation = (id: number): void => {
+    const filtered = conversations.filter(chat => chat.id !== id);
+    setConversations(filtered);
+  
+    // Si eliminaste el chat activo, cambia al primero que quede (si hay)
+    if (id === activeChatId && filtered.length > 0) {
+      setActiveChatId(filtered[0].id);
+    } else if (filtered.length === 0) {
+      // Si ya no queda ninguno, crear uno nuevo automáticamente
+      createNewConversation();
     }
   };
 
-  useEffect(() => {
-    messagesEndRef.current?.scrollIntoView({ behavior: "smooth" });
-  }, [messages]);
+
+  const createNewConversation = (): void => {
+    const newId = conversations.length + 1;
+    const newConversation: Conversation = {
+      id: newId,
+      title: `New Chat ${newId}`,
+      messages: [{ sender: "bot", text: "Hi! How can I help you today?" }],
+    };
+
+    setConversations([...conversations, newConversation]);
+    setActiveChatId(newId);
+  };
+
+  const activeChat: Conversation | undefined = conversations.find((chat) => chat.id === activeChatId);
+
+  const handleSelectChat = (id: number): void => setActiveChatId(id);
+
+  const handleSendMessage = (text: string): void => {
+    if (!text.trim()) return;
+
+    const updatedConversations = conversations.map((chat) => {
+      if (chat.id === activeChatId) {
+        return {
+          ...chat,
+          messages: [...chat.messages, { sender: "user", text }],
+        };
+      }
+      return chat;
+    });
+
+    setConversations(updatedConversations);
+  };
 
   return (
-    <div className="chatbot-container">
+    <>
       <NavBar />
-      <section style={{ backgroundColor: "#eee" }}>
-        <div className="container py-5">
-          <div className="row d-flex justify-content-center">
-            <div className="col-md-8 col-lg-6 col-xl-4">
-              <div className="card" id="chat1" style={{ borderRadius: "15px" }}>
-                <div className="card-header bg-info text-white">
-                  <p className="mb-0 fw-bold">Nova Chat</p>
-                </div>
-                <div
-                  className="card-body overflow-auto"
-                  style={{ height: "400px" }}
-                >
-                  {messages.map((msg, index) => (
-                    <div
-                      key={index}
-                      className={`d-flex mb-3 ${
-                        msg.sender === "user"
-                          ? "justify-content-end"
-                          : "justify-content-start"
-                      }`}
-                    >
-                      <div
-                        className={`p-2 ${
-                          msg.sender === "user"
-                            ? "bg-light text-dark"
-                            : "bg-primary text-white"
-                        } rounded`}
-                        style={{ maxWidth: "75%" }}
-                      >
-                        {msg.text}
-                      </div>
-                    </div>
-                  ))}
-                  <div ref={messagesEndRef} />
-                </div>
-                <div className="card-footer">
-                  <textarea
-                    className="form-control"
-                    rows={2}
-                    placeholder="Type your message..."
-                    value={input}
-                    onChange={(e) => setInput(e.target.value)}
-                    onKeyDown={handleKeyPress}
-                  />
-                  <button
-                    className="btn btn-info mt-2 float-end"
-                    onClick={handleSend}
-                  >
-                    Send
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-    </div>
+
+      {/* 🔘 Toggle para pantallas pequeñas */}
+      <button className="sidebar-toggle-btn   estilo_toggle_Nova" onClick={toggleSidebar}>
+
+      </button>
+
+      <div className="chatbot-layout">
+        {/* ✅ Sidebar solo si está visible */}
+        {sidebarVisible && (
+          <ChatSidebar
+            conversations={conversations}
+            onSelectChat={handleSelectChat}
+            activeChatId={activeChatId}
+            onNewChat={createNewConversation}
+            onDeleteChat={deleteConversation}
+          />
+        )}
+
+        <ChatWindow
+          conversation={activeChat}
+          onSendMessage={handleSendMessage}
+        />
+      </div>
+    </>
   );
 }

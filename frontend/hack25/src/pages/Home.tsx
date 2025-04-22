@@ -10,7 +10,6 @@ function Home() {
     
     <>
       <NavBar />
-      
       <h1>Bienvenido {user?.name ? user.name : "nuevo usuario"}</h1>
       <div className="texto-chido">
       <p>This is the home page.</p>

@@ -1,16 +1,27 @@
-import React from "react";
-import "./Chat_bot.css";
+// ChatWindow.jsx
+import React, { useState } from "react";
+import "../pages/Chat_bot.css";
+import NavBar from "./NavBar";
+export default function ChatWindow({ conversation, onSendMessage }) {
+  const [input, setInput] = useState("");
 
-export default function ChatWindow({ conversation }) {
+  const handleSend = () => {
+    onSendMessage(input);
+    setInput("");
+  };
+
   return (
+    
+    
+    <>
     <div className="chat-window">
       <div className="chat-header">
-        <h4>{conversation?.title}</h4>
+        <h3>{conversation?.title || "Chat"}</h3>
       </div>
       <div className="chat-messages">
-        {conversation?.messages.map((msg, index) => (
+        {conversation?.messages.map((msg, i) => (
           <div
-            key={index}
+            key={i}
             className={`chat-message ${msg.sender === "user" ? "user" : "bot"}`}
           >
             {msg.text}
@@ -18,9 +29,16 @@ export default function ChatWindow({ conversation }) {
         ))}
       </div>
       <div className="chat-input">
-        <textarea placeholder="Type your message..." />
-        <button>Send</button>
+        <textarea
+          placeholder="Type your message..."
+          value={input}
+          onChange={(e) => setInput(e.target.value)}
+        />
+        <button onClick={handleSend}>Send</button>
       </div>
     </div>
+    </>
   );
+  
 }
+
