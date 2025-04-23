@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import NavBar from "../components/NavBar";
-import "./Chat_bot.css";
-import ChatWindow from "../components/ChatWindow";
-import ChatSidebar from "../components/ChatSidebar";
+import NavBar from "../../components/NavBar";
+import "../Chat_bot.css";
+import ChatWindow from "../../components/ChatWindow"
+import ChatSidebar from "../../components/ChatSidebar";
 
 
 // Dentro de tu archivo ChatBot.tsx o en un archivo de tipos aparte (e.g., types/chat.ts)
@@ -88,7 +88,7 @@ export default function ChatBot() {
       if (chat.id === activeChatId) {
         return {
           ...chat,
-          messages: [...chat.messages, { sender: "user", text }],
+          messages: [...chat.messages, { sender: "user" as "user", text }],
         };
       }
       return chat;

@@ -1,0 +1,134 @@
+.tdButton, .qButton {
+	width: min(20vw, 100px);  /* máximo 100px o 20% del ancho de la pantalla */
+	height: min(20vw, 100px);
+	min-width: 60px;          /* mínimo para que no sea demasiado pequeño */
+	min-height: 60px;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 50%;
+	padding: 0;
+}  
+
+.qButton{
+	margin-bottom: 30px;
+	font-size: 24px;
+	cursor: pointer;
+	text-align: center;
+	text-decoration: none;
+	outline: none;
+	color: #fff;
+	background: linear-gradient(135deg, gold, #fff8dc 25%, gold 50%, #fff8dc 75%, gold);
+	border: none;
+	box-shadow: 0 9px #999;
+}
+
+.tdButton{
+	margin-bottom: 30px;
+	font-size: 24px;
+	cursor: pointer;
+	text-align: center;
+	text-decoration: none;
+	outline: none;
+	color: #fff;
+	background-color: rgb(139, 129, 208);
+	border: none;
+	box-shadow: 0 9px #999;
+}
+
+.tdButton:hover {background-color: #5349c4}
+
+.tdButton:active {
+	background-color: #8476ff;
+	box-shadow: 0 5px #666;
+	transform: translateY(4px);
+}
+
+.qButton:hover {  background: linear-gradient(135deg, gold, #fff8dc 20%, gold 55%, #fff8dc 70%, gold);
+}
+
+.qButton:active {
+	background-color: gold;
+	background: linear-gradient(135deg, gold, #fff8dc 20%, gold 55%, #fff8dc 70%, gold);
+	box-shadow: 0 5px #666;
+	transform: translateY(8px);
+}
+
+.icon{
+	width: 150%;
+	height: 35px;
+	display: inline-block;
+	object-fit: contain;
+	vertical-align: middle;
+	margin: auto;
+}
+
+
+/* Camino para los botones*/
+.button-path {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 40px;
+	margin: 30px auto;
+	position: relative;
+	max-width: 300px;
+	width: 50%;
+}
+
+.button-path > * {
+position: relative;
+transition: transform 0.3s ease;
+}
+
+/* Efecto de zigzag */
+.button-path > *:nth-child(odd) {
+align-self: flex-start;
+}
+
+.button-path > *:nth-child(even) {
+align-self: flex-end;
+}
+
+.button-path > *:last-child{
+align-self: center;
+}
+
+@media (max-width: 480px) {
+.button-path {
+	align-items: center;
+	gap: 20px;
+}
+
+.button-path::before {
+	display: none; /* opcional */
+}
+}
+
+.curve-line {
+	width: 80px;
+	height: 40px;
+	border: 2px solid #aaa;
+	border-top: none;
+	background: none;
+	border-radius: 0 0 40px 40px;
+	margin: -20px 0; /* Ajusta separación vertical */
+}
+
+.curve-line.left {
+	align-self: flex-start;
+	border-left: none;
+}
+
+.curve-line.right {
+	align-self: flex-end;
+	border-right: none;
+}
+
+.curve-line.center {
+	align-self: center;
+	border-left: none;
+	border-right: none;
+}
+

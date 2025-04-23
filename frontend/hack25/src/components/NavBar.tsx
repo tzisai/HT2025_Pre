@@ -4,7 +4,7 @@ import { FaUserCircle } from "react-icons/fa"; // Icono de usuario
 import { logoutUser } from "../firebase/auth";
 import { onAuthStateChanged } from "firebase/auth";
 import { auth } from "../firebase/firebaseApp"; // Ajusta la ruta si es necesario
-import "./NavBar.css"; 
+import "./NavBar.css";
 import logo from "../assets/sophos_web.svg"; // Ajustá la ruta según tu estructura
 import house from "../assets/house.svg"; // Ajustá la ruta según tu estructura
 
@@ -57,15 +57,10 @@ function NavBar() {
     ${isMobile ? "fixed-bottom" : "fixed-top"} bg-white z-50`}
     >
         <div className="container-fluid">
-        <a className="navbar-brand d-flex align-items-center" href="/">
-          <img
-            src={logo}
-            alt="Logo"
-            className="logo-img"
-          />
-          <span className="ms-2">NovAureum</span>
-        </a>
-
+          <a className="navbar-brand d-flex align-items-center" href="/">
+            <img src={logo} alt="Logo" className="logo-img" />
+            <span className="ms-2">NovAureum</span>
+          </a>
 
           {/* Botón de hamburguesa para colapsar en pantallas pequeñas */}
           <button
@@ -103,10 +98,10 @@ function NavBar() {
               </li>
               <li className="nav-item text-bt-nav">
                 <NavLink
-                  className={({ isActive }) =>
+                  to="/about" className={({ isActive }) =>
                     isActive ? "nav-link active text-act" : "nav-link"
                   }
-                  to="/about"
+                  
                 >
                   About us
                 </NavLink>
@@ -126,32 +121,40 @@ function NavBar() {
                       className={({ isActive }) =>
                         isActive ? "dropdown-item" : "dropdown-item"
                       }
-                      to="/chat_bot"
+                    to="/Nova"
                     >
-                      Nova-IA
+                      Nova - IA
                     </NavLink>
                   </li>
                   <li>
                     <NavLink
                       className={({ isActive }) =>
-                        isActive ? "dropdown-item text-primary" : "dropdown-item"
+                        isActive
+                          ? "dropdown-item text-primary"
+                          : "dropdown-item"
                       }
-                      to=""
+                      to="/Denarius"
                     >
-                     Islands
+                      Denarius - Courses
                     </NavLink>
                   </li>
+                  <li>
+                    <hr className="dropdown-divider" />
+                  </li>
+                 
                   <li>
                     <hr className="dropdown-divider" />
                   </li>
                   <li>
                     <NavLink
                       className={({ isActive }) =>
-                        isActive ? "dropdown-item text-primary" : "dropdown-item"
+                        isActive
+                          ? "dropdown-item text-primary"
+                          : "dropdown-item"
                       }
-                      to="/servicio3"
+                      to="/NEX"
                     >
-                      Service 3
+                      NEX - Investments
                     </NavLink>
                   </li>
                 </ul>
@@ -162,21 +165,21 @@ function NavBar() {
             <div className="d-flex ms-auto flex-column flex-lg-row align-items-lg-center gap-2 mt-3 mt-lg-0">
               {!isLoggedIn ? (
                 <>
-                <div className="boton-container">
-                  <button
-                    className="btn boton-isa"
-                    type="button"
-                    onClick={() => handleOnClick("signup")}
-                  >
-                    Create Account
-                  </button>
-                  <button
-                    className="btn boton-isa"
-                    type="button"
-                    onClick={() => handleOnClick("login")}
-                  >
-                    Log-in
-                  </button>
+                  <div className="boton-container">
+                    <button
+                      className="btn boton-isa"
+                      type="button"
+                      onClick={() => handleOnClick("signup")}
+                    >
+                      Create Account
+                    </button>
+                    <button
+                      className="btn boton-isa"
+                      type="button"
+                      onClick={() => handleOnClick("login")}
+                    >
+                      Log-in
+                    </button>
                   </div>
                 </>
               ) : (

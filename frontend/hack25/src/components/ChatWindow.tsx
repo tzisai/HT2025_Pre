@@ -1,19 +1,33 @@
-// ChatWindow.jsx
 import React, { useState } from "react";
 import "../pages/Chat_bot.css";
-import NavBar from "./NavBar";
-export default function ChatWindow({ conversation, onSendMessage }) {
-  const [input, setInput] = useState("");
+
+// Tipos locales (o puedes importarlos si los tienes en types/chat.ts)
+interface Message {
+  sender: "user" | "bot";
+  text: string;
+}
+
+interface Conversation {
+  id: number;
+  title: string;
+  messages: Message[];
+}
+
+interface ChatWindowProps {
+  conversation: Conversation | null | undefined;
+  onSendMessage: (text: string) => void;
+}
+
+const ChatWindow: React.FC<ChatWindowProps> = ({ conversation, onSendMessage }) => {
+  const [input, setInput] = useState<string>("");
 
   const handleSend = () => {
+    if (!input.trim()) return;
     onSendMessage(input);
     setInput("");
   };
 
   return (
-    
-    
-    <>
     <div className="chat-window">
       <div className="chat-header">
         <h3>{conversation?.title || "Chat"}</h3>
@@ -37,8 +51,7 @@ export default function ChatWindow({ conversation, onSendMessage }) {
         <button onClick={handleSend}>Send</button>
       </div>
     </div>
-    </>
   );
-  
-}
+};
 
+export default ChatWindow;

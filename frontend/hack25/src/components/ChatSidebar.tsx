@@ -1,6 +1,18 @@
 import React from "react";
 import "../pages/Chat_bot.css";
-import { Conversation } from "./types/chat"; // Si separaste las interfaces
+
+
+interface Message {
+  sender: 'user' | 'bot';
+  text: string;
+}
+
+
+interface Conversation {
+  id: number;
+  title: string;
+  messages: Message[];
+}
 
 interface ChatSidebarProps {
   conversations: Conversation[];
